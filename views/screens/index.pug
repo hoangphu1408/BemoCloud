@@ -1,0 +1,15 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "index-page"
+    - title_page = "Your Title"
+block css
+    link(rel="stylesheet", href="./assets/css/home.css")
+block main
+    include ../components/banner
+    include ../components/choose-bemo
+    include ../components/solution
+    include ../components/dashboard
+    include ../components/connect
+    include ../components/contact
+    include ../components/explore

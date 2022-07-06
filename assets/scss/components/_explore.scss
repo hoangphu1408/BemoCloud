@@ -1,0 +1,46 @@
+.explore {
+  height: 380px;
+  background: url('/assets/images/worker.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &-overplay {
+    position: absolute;
+    width: 100%;
+    opacity: 0.7;
+    height: 100%;
+    background: #0c3255;
+  }
+
+  &-content {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    h1 {
+      font-size: 32px;
+      line-height: 37.5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      button {
+        background: transparent;
+        border: 2px solid white;
+        padding: 15px 75px;
+
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

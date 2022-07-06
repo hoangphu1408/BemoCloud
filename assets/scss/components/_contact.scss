@@ -1,0 +1,112 @@
+.contact {
+  background: white;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  &-text {
+    width: 445px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+  }
+  &-info {
+    width: 825px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &-card {
+    min-width: 25.5rem;
+    min-height: 9rem;
+    background: var(--color-background-4);
+    display: flex;
+    justify-content: flex-start;
+    padding: 2.4rem 2.8rem 2.4rem 1.6rem;
+    border-radius: 8px;
+    border: 2px solid #b8d7f5;
+    &-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--color-warning);
+      position: relative;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+    }
+    &-content {
+      margin-left: 16px;
+      .card-text {
+        color: #808080;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-form {
+    background: var(--color-background-1);
+    margin-top: 24px;
+    h2 {
+      color: var(--color-txt-title);
+      text-align: center;
+      font-size: 24px;
+      line-height: 28.13px;
+      font-weight: 700;
+      padding-top: 32px;
+      padding-bottom: 24px;
+    }
+    &-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    &-input {
+      input {
+        border: none;
+        width: 100%;
+        height: 50px;
+        padding-left: 16px;
+        border-radius: 4px;
+      }
+    }
+
+    &-group,
+    &-area {
+      padding: 0 115px;
+    }
+
+    &-area {
+      margin-top: 24px;
+      textarea {
+        border: none;
+        width: 100%;
+        height: 170px;
+        resize: none;
+        border-radius: 4px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      padding: 48px 0;
+      button {
+        font-weight: 500;
+        line-height: 24px;
+        color: white;
+
+        text-align: ce;
+        padding: 13px 30px;
+        border: none;
+        border-radius: 8px;
+        background: var(--color-info);
+      }
+    }
+  }
+}

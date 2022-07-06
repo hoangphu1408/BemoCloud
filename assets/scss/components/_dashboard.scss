@@ -1,0 +1,43 @@
+.dashboard {
+  padding: 8rem 0;
+  background: white;
+  &__title {
+    h1 {
+      margin-bottom: 1.6rem;
+    }
+
+    margin-bottom: 1.1rem;
+  }
+  &__text {
+    width: 653px;
+  }
+
+  &-swiper {
+    margin-left: -1.6rem;
+  }
+}
+
+.swiper-container {
+  overflow: visible;
+}
+
+.swiper-slide {
+  transform: scale(0.79);
+}
+
+.swiper-slide-active {
+  transform: scale(1);
+  transition: all 1s;
+}
+
+.swiper-slide-prev {
+  opacity: 0;
+}
+
+.swiper-slide-next {
+  img {
+    position: absolute;
+    margin-top: 7%;
+    left: -36%;
+  }
+}

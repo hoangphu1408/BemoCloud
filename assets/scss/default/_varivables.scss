@@ -1,0 +1,50 @@
+$theme-colors: (
+  'primary': #8200ff,
+  'primary-light': #b8d7f5,
+  'primary-light-2': #dbebfa,
+  'secondary': #e90cb2,
+  'txt-body': #202121,
+  'txt-body-2': #1c73c4,
+  'txt-body-3': #0c3255,
+  'background-1': #f4f7f6,
+  'background-2': #081f36,
+  'background-3': #051423,
+  'border': #e9e7ee,
+  'success': #09c253,
+  'info': #1470eb,
+  'warning': #f9b506,
+  'error': #da0b0b,
+  'active': #ffa800,
+);
+
+$theme-fonts: (
+  'body': 'Roboto',
+  'icons': 'Font Awesome 5 Pro',
+);
+
+:root {
+  --color-primary: #{map-get($map: $theme-colors, $key: 'primary')};
+  --color-primary-light: #{map-get($map: $theme-colors, $key: 'primary-light')};
+  --color-primary-light-2: #{map-get(
+      $map: $theme-colors,
+      $key: 'primary-light-2'
+    )};
+
+  --color-secondary: #{map-get($map: $theme-colors, $key: 'secondary')};
+
+  --color-txt-body: #{map-get($map: $theme-colors, $key: 'txt-body')};
+  --color-txt-body-2: #{map-get($map: $theme-colors, $key: 'txt-body-2')};
+  --color-txt-body-3: #{map-get($map: $theme-colors, $key: 'txt-body-3')};
+
+  --color-background-1: #{map-get($map: $theme-colors, $key: 'background-1')};
+  --color-background-2: #{map-get($map: $theme-colors, $key: 'background-2')};
+  --color-background-3: #{map-get($map: $theme-colors, $key: 'background-3')};
+  --color-border: #{map-get($map: $theme-colors, $key: 'border')};
+  --color-success: #{map-get($map: $theme-colors, $key: 'success')};
+  --color-info: #{map-get($map: $theme-colors, $key: 'info')};
+  --color-warning: #{map-get($map: $theme-colors, $key: 'warning')};
+  --color-error: #{map-get($map: $theme-colors, $key: 'error')};
+  --font-body: #{map-get($map: $theme-fonts, $key: 'body')};
+  --font-icons: #{map-get($map: $theme-fonts, $key: 'icons')};
+  --color-active: #{map-get($map: $theme-colors, $key: 'active')};
+}

@@ -1,0 +1,57 @@
+.chooseBemo {
+  padding-top: 39.4rem;
+  overflow: hidden;
+  &__title {
+    margin-bottom: 3.6rem;
+    width: 540px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5.6rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 2.4rem;
+
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(2, 31rem);
+      grid-column-gap: 3.2rem;
+    }
+  }
+
+  &__item {
+    &__title {
+      display: flex;
+      margin-bottom: 0.8rem;
+      h3 {
+        font-weight: 700;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+
+        color: var(--color-txt-body-3);
+        margin-left: 1.6rem;
+      }
+    }
+
+    &__text {
+      font-style: 1.4rem;
+    }
+    &__ico {
+      border-radius: 0.8rem;
+      padding: 1.3rem;
+      background-color: var(--color-primary-light-2);
+    }
+  }
+
+  &__image {
+    margin-top: 4.4rem;
+    height: 49.6rem;
+    width: 92rem;
+  }
+}
