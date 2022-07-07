@@ -1,9 +1,15 @@
 .connect {
   padding: 8rem 0;
+  background: #f1f6f9;
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5.1rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__title {

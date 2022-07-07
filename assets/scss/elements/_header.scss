@@ -16,43 +16,88 @@ header {
   }
 
   &__logo {
+    align-items: center;
     justify-content: flex-start;
     img {
       width: 17.8rem;
       height: 3rem;
     }
+
+    @include mobile {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
+  &__hamburger {
+    z-index: 100001;
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
   &__menu {
+    justify-content: center;
     &__list {
       display: flex;
+      @include mobile {
+        flex-direction: column;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s;
+      }
     }
 
     &__item {
       padding: 0 2.2rem;
       white-space: nowrap;
-
+      display: flex;
+      align-items: center;
       &:first-child {
         padding-left: 0;
+        @include mobile {
+          padding-left: 2.2rem;
+        }
       }
       &:last-child {
         padding-right: 0;
       }
       &.active .header__menu__link {
         color: var(--color-active);
+
+        @include mobile {
+          color: var(--color-txt-body-3);
+        }
       }
     }
     &__link {
       color: white;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 2.4rem;
       font-weight: 1.6rem;
+    }
+
+    @include mobile {
+      display: none;
+      position: fixed;
+      z-index: 100000;
+      background: var(--color-active);
+      width: 600px;
+      height: 100%;
+      top: 0;
+      &.header__show {
+        display: block;
+      }
     }
   }
 
   &__language {
     justify-content: flex-end;
+    align-items: center;
     color: white;
     &__flag {
       img {
@@ -66,5 +111,13 @@ header {
       text-transform: uppercase;
       padding: 0 0.8rem;
     }
+
+    @include mobile {
+      display: none;
+    }
+  }
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -20,6 +20,10 @@
     color: white;
     top: 50%;
     transform: translateY(-50%);
+
+    @include mobile {
+      top: 45%;
+    }
   }
 
   &__content {
@@ -30,6 +34,10 @@
       line-height: 6.8rem;
       font-weight: 700;
       margin-bottom: 0.8rem;
+
+      @include laptop {
+        font-size: 4.5rem;
+      }
     }
 
     &__text {
@@ -42,11 +50,15 @@
       color: white;
       text-transform: uppercase;
       background: var(--color-active);
-      line-height: 6rem;
-      min-width: 22rem;
-      padding: 0 7rem;
+      line-height: 5rem;
+      min-width: 10rem;
+      padding: 0 5rem;
       border: none;
       border-radius: 0.8rem;
     }
   }
+
+  // @include laptop {
+  //   min-height: 700px;
+  // }
 }

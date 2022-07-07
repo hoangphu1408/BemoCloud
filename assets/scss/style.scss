@@ -1,4 +1,5 @@
 @import './default/_varivables';
+@import './default/_mixins';
 @import './default/_atomic.scss';
 @import './default/_grid.scss';
 @import './default/_utilities.scss';
@@ -15,3 +16,5 @@
 @import './elements/_hamburger_icon.scss';
 @import './elements/_header.scss';
 @import './elements/_footer.scss';
+
+// @import './home.scss';

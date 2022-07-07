@@ -3,6 +3,8 @@ header
         .header
             .header__logo
                 img(src="./assets/images/Logo.png")
+                .header__hamburger
+                    include hamburger-icon
             .header__menu
                 ul.header__menu__list
                     li.header__menu__item.active
@@ -17,11 +19,12 @@ header
                         a.header__menu__link(href="/") Blog
                     li.header__menu__item
                         a.header__menu__link(href="/") Contact
-            .header__language.dropdown 
+            .header__language.dropdown
                 .header__language__flag
                     img(src="./assets/images/us-flag 1.png")
                 p.header__language__text eng
                 i.fad.fa-angle-down
 
                 .dropdown-menu
+                    li.dropdown-item hehe
                     li.dropdown-item hehe

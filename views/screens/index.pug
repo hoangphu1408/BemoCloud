@@ -2,11 +2,12 @@ extends ../layouts/layout
 
 block params
     - class_body = "index-page"
-    - title_page = "Your Title"
+    - title_page = "Bemo"
 block css
     link(rel="stylesheet", href="./assets/css/home.css")
 block main
     include ../components/banner
+    include ../components/carousel
     include ../components/choose-bemo
     include ../components/solution
     include ../components/dashboard

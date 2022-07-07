@@ -1,12 +1,26 @@
 .solution {
   position: relative;
-  padding-bottom: 5rem;
+  // padding-bottom: 5rem;
+  padding: 8rem 0;
+  background-color: white;
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.2rem;
+    gap: 3.6rem;
     position: relative;
-    z-index: 10000;
+    z-index: 3;
+
+    @include pc {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-right: 150px;
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
   }
 
   &__right {

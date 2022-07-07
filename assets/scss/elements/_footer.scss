@@ -6,6 +6,10 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 10rem 0;
     gap: 3.8rem;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &-logo {

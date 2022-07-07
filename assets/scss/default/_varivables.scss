@@ -22,6 +22,10 @@ $theme-fonts: (
   'icons': 'Font Awesome 5 Pro',
 );
 
+$mobile-width: 600px;
+$laptop-width: 1200px;
+$pc-width: 1680px;
+
 :root {
   --color-primary: #{map-get($map: $theme-colors, $key: 'primary')};
   --color-primary-light: #{map-get($map: $theme-colors, $key: 'primary-light')};
