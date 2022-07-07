@@ -1,6 +1,5 @@
 @import './default/_varivables';
 @import './default/_mixins';
-
 @import './components/banner';
 @import './components/carousel';
 @import './components/choose_bemo';
@@ -9,3 +8,9 @@
 @import './components/connect';
 @import './components/contact';
 @import './components/explore';
+
+main {
+  @include mobile {
+    font-size: 1.6rem;
+  }
+}

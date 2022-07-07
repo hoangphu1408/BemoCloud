@@ -63,6 +63,12 @@
   margin-bottom: 0.8rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .banner__content__title {
+    font-size: 3.6rem;
+  }
+}
+
 .banner__content__text {
   line-height: 2.4rem;
   font-weight: 400;
@@ -78,6 +84,12 @@
   padding: 0 5rem;
   border: none;
   border-radius: 0.8rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .banner__content {
+    width: 100%;
+  }
 }
 
 .carousel {
@@ -220,6 +232,12 @@
 .chooseBemo__title {
   margin-bottom: 3.6rem;
   width: 540px;
+}
+
+@media only screen and (max-width: 500px) {
+  .chooseBemo__title {
+    width: 100%;
+  }
 }
 
 .chooseBemo__content {
@@ -636,6 +654,12 @@
   }
   .explore-content p {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    font-size: 1.6rem;
   }
 }
 

@@ -218,6 +218,12 @@
   color: var(--color-txt-body-3);
 }
 
+@media only screen and (max-width: 500px) {
+  .section__title__main {
+    font-size: 2.4rem;
+  }
+}
+
 .line-before::before {
   content: '';
   display: inline-block;
@@ -1177,7 +1183,7 @@ body.no-scroll {
 
 @media (max-width: 575.98px) {
   body {
-    font-size: 0.875rem;
+    font-size: 1.6rem;
   }
 }
 

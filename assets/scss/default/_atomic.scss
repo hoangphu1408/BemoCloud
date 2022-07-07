@@ -168,6 +168,10 @@
     line-height: 4.4rem;
     font-weight: 700;
     color: var(--color-txt-body-3);
+
+    @include mobile {
+      font-size: 2.4rem;
+    }
   }
 }
 
