@@ -468,6 +468,12 @@
   margin-bottom: 2.4rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .contact-text {
+    width: 100%;
+  }
+}
+
 .contact-info {
   width: 825px;
   margin: 0 auto;
@@ -480,6 +486,12 @@
   .contact-info {
     grid-template-columns: repeat(1, 1fr);
     width: 25.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-info {
+    width: 100%;
   }
 }
 

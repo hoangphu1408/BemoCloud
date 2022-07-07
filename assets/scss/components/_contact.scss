@@ -8,6 +8,10 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 2.4rem;
+
+    @include mobile {
+      width: 100%;
+    }
   }
   &-info {
     width: 825px;
@@ -19,6 +23,10 @@
     @include tablet {
       grid-template-columns: repeat(1, 1fr);
       width: 25.5rem;
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
   &-card {
