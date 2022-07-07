@@ -23,7 +23,7 @@ header {
       height: 3rem;
     }
 
-    @include mobile {
+    @include tablet {
       width: 100%;
       justify-content: space-between;
     }
@@ -32,7 +32,7 @@ header {
   &__hamburger {
     z-index: 100001;
     display: none;
-    @include mobile {
+    @include tablet {
       display: block;
     }
   }
@@ -40,7 +40,7 @@ header {
     justify-content: center;
     &__list {
       display: flex;
-      @include mobile {
+      @include tablet {
         flex-direction: column;
         margin: auto;
         position: absolute;
@@ -58,7 +58,7 @@ header {
       align-items: center;
       &:first-child {
         padding-left: 0;
-        @include mobile {
+        @include tablet {
           padding-left: 2.2rem;
         }
       }
@@ -68,7 +68,7 @@ header {
       &.active .header__menu__link {
         color: var(--color-active);
 
-        @include mobile {
+        @include tablet {
           color: var(--color-txt-body-3);
         }
       }
@@ -81,12 +81,12 @@ header {
       font-weight: 1.6rem;
     }
 
-    @include mobile {
+    @include tablet {
       display: none;
       position: fixed;
       z-index: 100000;
       background: var(--color-active);
-      width: 600px;
+      width: 100%;
       height: 100%;
       top: 0;
       &.header__show {
@@ -112,11 +112,11 @@ header {
       padding: 0 0.8rem;
     }
 
-    @include mobile {
+    @include tablet {
       display: none;
     }
   }
-  @include mobile {
+  @include tablet {
     flex-direction: column;
     align-items: center;
   }

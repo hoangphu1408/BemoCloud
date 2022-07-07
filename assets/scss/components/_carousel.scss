@@ -100,7 +100,7 @@
   background-color: #0c3255;
   opacity: 0.3;
 
-  @include mobile {
+  @include tablet {
     transform: scale(0.5);
   }
 }

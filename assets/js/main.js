@@ -67,9 +67,9 @@
       carousel.slick({
         dots: true,
         arrow: true,
-        infinite: true,
-        autoplay: true,
-        speed: 200,
+        // infinite: true,
+        // autoplay: true,
+        // speed: 200,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow:
@@ -83,18 +83,28 @@
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
-              infinite: true,
               dots: true,
             },
           },
           {
-            breakpoint: 700,
+            breakpoint: 769,
             settings: {
               dots: true,
               arrow: false,
               prevArrow: null,
               nextArrow: null,
               slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              dots: true,
+              arrow: false,
+              prevArrow: null,
+              nextArrow: null,
+              slidesToShow: 1,
               slidesToScroll: 1,
             },
           },

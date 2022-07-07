@@ -12,7 +12,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5.6rem;
 
-    @include mobile {
+    @include tablet {
       display: block;
     }
   }
@@ -23,7 +23,7 @@
     grid-row-gap: 2.4rem;
     grid-column-gap: 3.2rem;
 
-    @include mobile {
+    @include tablet {
       grid-template-columns: repeat(2, 1fr);
     }
   }

@@ -15,7 +15,7 @@
       margin: 0 auto;
       padding-right: 150px;
     }
-    @include mobile {
+    @include tablet {
       display: flex;
       flex-direction: column-reverse;
       padding-left: 3rem;

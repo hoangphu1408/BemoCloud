@@ -22,8 +22,8 @@ $theme-fonts: (
   'icons': 'Font Awesome 5 Pro',
 );
 
-$mobile-width: 600px;
-$laptop-width: 1200px;
+$mobile-width: 500px; //768
+$tablet-width: 768px; //1200
 $pc-width: 1680px;
 
 :root {

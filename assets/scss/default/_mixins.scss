@@ -4,8 +4,8 @@
   }
 }
 
-@mixin laptop {
-  @media only screen and (max-width: $laptop-width) {
+@mixin tablet {
+  @media only screen and (max-width: $tablet-width) {
     @content;
   }
 }

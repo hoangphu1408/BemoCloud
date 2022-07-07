@@ -16,7 +16,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 
-    @include mobile {
+    @include tablet {
       grid-template-columns: repeat(1, 1fr);
       width: 25.5rem;
     }
@@ -71,7 +71,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2.4rem;
 
-      @include mobile {
+      @include tablet {
         grid-template-columns: repeat(1, 1fr);
       }
     }
@@ -90,7 +90,7 @@
     &-area {
       padding: 0 11.5rem;
 
-      @include mobile {
+      @include tablet {
         padding: 0 5rem;
       }
     }

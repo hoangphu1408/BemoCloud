@@ -21,7 +21,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include mobile {
+    @include tablet {
       top: 45%;
     }
   }
@@ -34,10 +34,6 @@
       line-height: 6.8rem;
       font-weight: 700;
       margin-bottom: 0.8rem;
-
-      @include laptop {
-        font-size: 4.5rem;
-      }
     }
 
     &__text {
@@ -57,8 +53,4 @@
       border-radius: 0.8rem;
     }
   }
-
-  // @include laptop {
-  //   min-height: 700px;
-  // }
 }

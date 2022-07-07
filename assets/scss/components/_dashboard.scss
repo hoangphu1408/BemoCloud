@@ -2,6 +2,7 @@
   position: relative;
   padding: 8rem 0;
   background: white;
+  overflow: hidden;
   &__abshape {
     position: absolute;
     top: 0;
@@ -20,12 +21,20 @@
   }
   &__text {
     width: 653px;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &-swiper {
     display: inline-block;
     width: 961px;
     margin-left: -1.6rem;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 }
 

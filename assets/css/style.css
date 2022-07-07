@@ -234,7 +234,7 @@
   padding-right: 150px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -18064,7 +18064,7 @@ header {
   height: 3rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__logo {
     width: 100%;
     justify-content: space-between;
@@ -18076,7 +18076,7 @@ header {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__hamburger {
     display: block;
   }
@@ -18090,7 +18090,7 @@ header {
   display: flex;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__menu__list {
     flex-direction: column;
     margin: auto;
@@ -18113,7 +18113,7 @@ header {
   padding-left: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__menu__item:first-child {
     padding-left: 2.2rem;
   }
@@ -18127,7 +18127,7 @@ header {
   color: var(--color-active);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__menu__item.active .header__menu__link {
     color: var(--color-txt-body-3);
   }
@@ -18141,13 +18141,13 @@ header {
   font-weight: 1.6rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__menu {
     display: none;
     position: fixed;
     z-index: 100000;
     background: var(--color-active);
-    width: 600px;
+    width: 100%;
     height: 100%;
     top: 0;
   }
@@ -18173,13 +18173,13 @@ header {
   padding: 0 0.8rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header__language {
     display: none;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     align-items: center;
@@ -18198,7 +18198,7 @@ header {
   gap: 3.8rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-content {
     grid-template-columns: repeat(1, 1fr);
   }
