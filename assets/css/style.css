@@ -18053,11 +18053,11 @@ header {
 
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 .header__logo, .header__menu, .header__language {
   display: flex;
-  flex: 1;
 }
 
 .header__logo {

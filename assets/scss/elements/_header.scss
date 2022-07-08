@@ -7,17 +7,19 @@ header {
 
 .header {
   display: flex;
+  justify-content: space-between;
 
   &__logo,
   &__menu,
   &__language {
     display: flex;
-    flex: 1;
+    // flex: 1;
   }
 
   &__logo {
     align-items: center;
     justify-content: flex-start;
+    // padding-right: 8.8rem;
     img {
       width: 17.8rem;
       height: 3rem;
@@ -99,6 +101,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     color: white;
+    // padding-left: 17rem;
     &__flag {
       img {
         width: 2.4rem;
