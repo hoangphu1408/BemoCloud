@@ -71,6 +71,7 @@ header {
       white-space: nowrap;
       display: flex;
       align-items: center;
+
       &:first-child {
         padding-left: 0;
         @include large {
@@ -88,6 +89,10 @@ header {
         }
       }
 
+      &:hover .header__menu__link {
+        color: var(--color-active);
+      }
+
       @include laptop {
         padding: 0 1.2rem;
       }
@@ -98,7 +103,7 @@ header {
       font-weight: 500;
       line-height: 2.4rem;
       font-weight: 1.6rem;
-
+      transition: all 0.5s;
       @include text-overflow;
     }
 
@@ -135,6 +140,32 @@ header {
     &__text {
       text-transform: uppercase;
       padding: 0 0.8rem;
+    }
+
+    .dropdown__language {
+      left: auto;
+      background: transparent;
+      border: none;
+
+      .dropdown-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        img {
+          border-radius: 50%;
+        }
+        p {
+          margin-left: 0.5rem;
+        }
+        transition: all 0.5s;
+        &:hover {
+          background: var(--color-active);
+          p {
+            color: black;
+          }
+        }
+      }
     }
 
     @include laptop {

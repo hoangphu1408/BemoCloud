@@ -18159,6 +18159,10 @@ header {
   }
 }
 
+.header__menu__item:hover .header__menu__link {
+  color: var(--color-active);
+}
+
 @media only screen and (max-width: 1200px) {
   .header__menu__item {
     padding: 0 1.2rem;
@@ -18171,6 +18175,7 @@ header {
   font-weight: 500;
   line-height: 2.4rem;
   font-weight: 1.6rem;
+  transition: all 0.5s;
   max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -18209,6 +18214,36 @@ header {
 .header__language__text {
   text-transform: uppercase;
   padding: 0 0.8rem;
+}
+
+.header__language .dropdown__language {
+  left: auto;
+  background: transparent;
+  border: none;
+}
+
+.header__language .dropdown__language .dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+}
+
+.header__language .dropdown__language .dropdown-item img {
+  border-radius: 50%;
+}
+
+.header__language .dropdown__language .dropdown-item p {
+  margin-left: 0.5rem;
+}
+
+.header__language .dropdown__language .dropdown-item:hover {
+  background: var(--color-active);
+}
+
+.header__language .dropdown__language .dropdown-item:hover p {
+  color: black;
 }
 
 @media only screen and (max-width: 1200px) {
