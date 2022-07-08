@@ -18141,7 +18141,7 @@ header {
 
 @media only screen and (max-width: 992px) {
   .header__menu__item:first-child {
-    padding-left: 1rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -18161,6 +18161,12 @@ header {
 
 .header__menu__item:hover .header__menu__link {
   color: var(--color-active);
+}
+
+@media only screen and (max-width: 992px) {
+  .header__menu__item:hover .header__menu__link {
+    color: var(--color-txt-body-3);
+  }
 }
 
 @media only screen and (max-width: 1200px) {

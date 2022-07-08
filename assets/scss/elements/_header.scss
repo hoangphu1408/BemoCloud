@@ -75,7 +75,7 @@ header {
       &:first-child {
         padding-left: 0;
         @include large {
-          padding-left: 1rem;
+          padding-left: 1.2rem;
         }
       }
       &:last-child {
@@ -91,6 +91,10 @@ header {
 
       &:hover .header__menu__link {
         color: var(--color-active);
+
+        @include large {
+          color: var(--color-txt-body-3);
+        }
       }
 
       @include laptop {
