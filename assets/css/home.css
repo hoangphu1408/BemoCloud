@@ -99,8 +99,6 @@
 }
 
 .carousel__item {
-  max-width: 262px;
-  min-height: 363px;
   border-radius: 0.8rem;
   text-align: center;
   background-color: white;
