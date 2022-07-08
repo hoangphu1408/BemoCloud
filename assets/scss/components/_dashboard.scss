@@ -30,7 +30,7 @@
   &-swiper {
     // max-width: 83.3333333333%;
     // margin-top: 16px;
-    max-width: 961px;
+    max-width: 920px;
     @include tablet {
       width: 100%;
     }
@@ -42,12 +42,15 @@
 }
 
 .swiper-slide:not(.swiper-slide-active) {
-  transform: scale(0.9);
+  transform: scale(0.92);
   transition: all 1s;
 }
 
 .swiper-slide {
-  // margin-right: 0;
+  img {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
+    border-radius: 0.8rem;
+  }
 }
 
 .swiper-slide-active {

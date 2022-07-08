@@ -73,9 +73,9 @@
       carousel.slick({
         dots: true,
         arrow: true,
-        // infinite: true,
-        // autoplay: true,
-        // speed: 200,
+        infinite: true,
+        autoplay: true,
+        speed: 200,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow:
@@ -121,8 +121,8 @@
       const swiper = new Swiper('.dashboard-swiper .swiper-container', {
         slidesPerView: 1,
         loop: true,
-        autoplay: true,
-        speed: 1500,
+        // autoplay: true,
+        // speed: 1500,
         // speedBetween: 5000,
         pagination: {
           el: '.swiper-pagination',
