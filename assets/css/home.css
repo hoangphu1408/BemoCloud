@@ -61,7 +61,7 @@
   word-break: break-word;
 }
 
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   .banner__content__title {
     font-size: 3.6rem;
   }
@@ -97,7 +97,7 @@
   text-overflow: ellipsis;
 }
 
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   .banner__content {
     width: 100%;
   }
@@ -291,7 +291,7 @@
   width: 540px;
 }
 
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   .chooseBemo__title {
     width: 100%;
   }
@@ -576,7 +576,7 @@
   margin-bottom: 2.4rem;
 }
 
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   .contact-text {
     width: 100%;
   }
@@ -813,7 +813,7 @@
   }
 }
 
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   main {
     font-size: 1.6rem;
   }

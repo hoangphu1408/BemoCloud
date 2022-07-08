@@ -217,14 +217,14 @@
   font-weight: 700;
   color: var(--color-txt-body-3);
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   word-break: break-word;
 }
 
-@media only screen and (max-width: 576) {
+@media only screen and (max-width: 576px) {
   .section__title__main {
     font-size: 2.4rem;
   }
