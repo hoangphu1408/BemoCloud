@@ -121,8 +121,8 @@
       const swiper = new Swiper('.dashboard-swiper .swiper-container', {
         slidesPerView: 1,
         loop: true,
-        // autoplay: true,
-        // speed: 1500,
+        autoplay: true,
+        speed: 1500,
         // speedBetween: 5000,
         pagination: {
           el: '.swiper-pagination',
