@@ -6,7 +6,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5.1rem;
 
-    @include tablet {
+    @include laptop {
       display: flex;
       flex-direction: column-reverse;
     }
@@ -20,7 +20,16 @@
     }
   }
 
+  &__left {
+    @include laptop {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__item__text {
     margin-bottom: 0.8rem;
+
+    @include text-truncate(8);
   }
 }

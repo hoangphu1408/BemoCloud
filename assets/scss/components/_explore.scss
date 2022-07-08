@@ -28,6 +28,10 @@
       text-transform: uppercase;
       margin-bottom: 1.6rem;
     }
+    h1,
+    p {
+      @include text-truncate(2);
+    }
 
     &-btn {
       display: flex;
@@ -40,10 +44,14 @@
 
         color: white;
         text-transform: uppercase;
+        white-space: nowrap;
+        p {
+          @include text-overflow;
+        }
       }
     }
 
-    @include tablet {
+    @include laptop {
       padding-left: 3rem;
       padding-right: 3rem;
       width: 100%;

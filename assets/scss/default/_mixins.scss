@@ -10,8 +10,40 @@
   }
 }
 
+@mixin large {
+  @media only screen and (max-width: $large-width) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (max-width: $laptop-width) {
+    @content;
+  }
+}
+
 @mixin pc {
   @media only screen and (max-width: $pc-width) {
     @content;
   }
+}
+
+@mixin text-overflow {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin text-line-overflow($lh, $line) {
+  max-height: calc(#{$lh} * #{$line});
+  overflow: hidden;
+}
+
+@mixin text-truncate($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
 }

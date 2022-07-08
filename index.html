@@ -20,7 +20,7 @@
     <header>
       <div class="container">
         <div class="header">
-          <div class="header__logo"><img src="./assets/images/Logo.png"/>
+          <div class="header__logo"><img class="header__logo__main" src="./assets/images/Logo.png"/>
             <div class="header__hamburger">
               <button class="hamburger-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                 <svg width="44" height="44" viewBox="0 0 100 100">
@@ -32,21 +32,23 @@
             </div>
           </div>
           <div class="header__menu">
-            <ul class="header__menu__list">
-              <li class="header__menu__item active"><a class="header__menu__link" href="/">Home</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">About us</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Services</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Solution</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Blog</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Contact</a></li>
-            </ul>
-          </div>
-          <div class="header__language dropdown">
-            <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
-            <p class="header__language__text">eng</p><i class="fad fa-angle-down"></i>
-            <div class="dropdown-menu">
-              <li class="dropdown-item">hehe</li>
-              <li class="dropdown-item">hehe</li>
+            <div class="header__menu__content">
+              <ul class="header__menu__list">
+                <li class="header__menu__item active"><a class="header__menu__link" href="/">Home</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">About us</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Services</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Solution</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Blog</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Contact</a></li>
+              </ul>
+              <div class="header__language dropdown">
+                <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
+                <p class="header__language__text">eng</p><i class="fad fa-angle-down"></i>
+                <div class="dropdown__language dropdown-menu">
+                  <li class="dropdown-item">hehe</li>
+                  <li class="dropdown-item">hehe</li>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -61,7 +63,9 @@
             <div class="banner__content"> 
               <h1 class="banner__content__title">BỘ GIẢI PHÁP CÔNG NGHỆ CHUYỂN ĐỔI SỐ DOANH NGHIỆP</h1>
               <p class="banner__content__text">Bemo Cloud cung cấp bộ giải pháp công nghệ toàn diện hỗ trợ cho quá trình chuyển đổi số và sự phát triển bền vững của doanh nghiệp. Chúng tôi mong muốn đi cùng và hỗ trợ cho sự phát triển của doanh nghiệp.</p>
-              <button class="banner__content__button">CONTACT</button>
+              <button class="banner__content__button"> 
+                <p>CONTACT</p>
+              </button>
             </div>
           </div>
         </div>
@@ -70,36 +74,144 @@
         <div class="container">
           <div class="carousel__list">
             <div class="carousel__item"> 
-              <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
-              <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
-              <div class="carousel__item__text">
-                <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
               </div>
-              <button class="carousel__item__button">Xem thêm</button>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel__item"> 
-              <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
-              <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
-              <p class="carousel__item__text">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
-              <button class="carousel__item__button">Xem thêm</button>
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
+              </div>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel__item"> 
-              <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
-              <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
-              <p class="carousel__item__text">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
-              <button class="carousel__item__button">Xem thêm</button>
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
+              </div>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel__item"> 
-              <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
-              <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
-              <p class="carousel__item__text">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
-              <button class="carousel__item__button">Xem thêm</button>
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
+              </div>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="carousel__item"> 
-              <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
-              <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
-              <p class="carousel__item__text">Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
-              <button class="carousel__item__button">Xem thêm</button>
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
+              </div>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__item"> 
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
+              </div>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel__item"> 
+              <div class="carousel__item__top">
+                <div class="carousel__item__image"><img src="./assets/images/carousel1.png"/></div>
+              </div>
+              <div class="carousel__item__content">
+                <div class="carousel__item__top">
+                  <h3 class="carousel__item__title">Quản trị nguồn nhân lực</h3>
+                  <div class="carousel__item__text">
+                    <p>Quản trị, tối ưu hoá sử dụng nguồn nhân lực trong kỷ nguyên số</p>
+                  </div>
+                </div>
+                <div class="carousel__item__footer">
+                  <div class="carrousel__item__button">
+                    <button class="carousel__item__button"> 
+                      <p>Xem thêm</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -190,25 +302,27 @@
         </div>
       </section>
       <section class="solution">
-        <div class="solution__content">
-          <div class="solution__left"><img src="./assets/images/solution.png"/></div>
-          <div class="solution__right"> 
-            <div class="solution__title">
-              <h3 class="section__title">BEST SOLUTION</h3>
-              <h1 class="section__title__main">Giải pháp toàn diện, chi phí hợp lý</h1>
-            </div>
-            <div class="solution__list">
-              <div class="solution__item">
-                <div class="solution__item__ico"><i class="fa fa-check-circle"></i></div>
-                <p class="solution__item text">Bemo Cloud mang đến giải pháp công nghệ toàn diện cho chuyển đổi số doanh nghiệp với chi phí hợp lý mà tất cả các doanh nghiệp với quy mô khác nhau có thể tiếp cận.</p>
+        <div class="container">
+          <div class="solution__content">
+            <div class="solution__left"><img src="./assets/images/solution2.png"/></div>
+            <div class="solution__right"> 
+              <div class="solution__title">
+                <h3 class="section__title">BEST SOLUTION</h3>
+                <h1 class="section__title__main">Giải pháp toàn diện, chi phí hợp lý</h1>
               </div>
-              <div class="solution__item">
-                <div class="solution__item__ico"><i class="fa fa-check-circle"></i></div>
-                <p class="solution__item text">Bemo Cloud sẽ giúp cho doanh nghiệp tự động hóa các quy trình, tránh sự chồng chéo, từ đó tăng tính kiểm soát, giảm thiểu rủi ro với tiềm năng phát triển của doanh nghiệp. Việc ứng dụng công nghệ mới Big Data, AI sẽ là bệ phóng giúp các doanh nghiệp tối ưu chi phí vận hành, tăng năng suất lao động, tăng trải nghiệm khách hàng.</p>
-              </div>
-              <div class="solution__item">
-                <div class="solution__item__ico"><i class="fa fa-check-circle"></i></div>
-                <p class="solution__item text">Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.</p>
+              <div class="solution__list">
+                <div class="solution__item">
+                  <div class="solution__item__ico"><i class="fa fa-check-circle"></i></div>
+                  <p class="solution__item__text">Bemo Cloud mang đến giải pháp công nghệ toàn diện cho chuyển đổi số doanh nghiệp với chi phí hợp lý mà tất cả các doanh nghiệp với quy mô khác nhau có thể tiếp cận.</p>
+                </div>
+                <div class="solution__item">
+                  <div class="solution__item__ico"><i class="fa fa-check-circle"></i></div>
+                  <p class="solution__item__text">Bemo Cloud sẽ giúp cho doanh nghiệp tự động hóa các quy trình, tránh sự chồng chéo, từ đó tăng tính kiểm soát, giảm thiểu rủi ro với tiềm năng phát triển của doanh nghiệp. Việc ứng dụng công nghệ mới Big Data, AI sẽ là bệ phóng giúp các doanh nghiệp tối ưu chi phí vận hành, tăng năng suất lao động, tăng trải nghiệm khách hàng.</p>
+                </div>
+                <div class="solution__item">
+                  <div class="solution__item__ico"><i class="fa fa-check-circle"></i></div>
+                  <p class="solution__item__text">Bemo Cloud ứng dụng công nghệ “Điện toán đám mây” giúp doanh nghiệp loại bỏ chi phí đầu tư ban đầu, chi phí bảo trì, nâng cấp. Các doanh nghiệp có thể sử dụng ngay với thời gian triển khai chỉ 2-4 tuần, chi phí chỉ từ 50,000vnđ/người/tháng.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -216,7 +330,7 @@
         <div class="solution__clip-path"></div>
       </section>
       <section class="dashboard">
-        <div class="dashboard__abshape"> <img src="./assets/images/ab-sahpe.png" alt=""/></div>
+        <div class="dashboard__abshape"><img src="./assets/images/ab-sahpe.png" alt=""/></div>
         <div class="container">
           <div class="dashboard__title">
             <h3 class="section__title">DASHBOARD SCREENSHOT</h3>
@@ -226,8 +340,8 @@
           <div class="dashboard-swiper">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"> <img src="./assets/images/brower2.png"/></div>
-                <div class="swiper-slide"><img src="./assets/images/brower2.png"/></div>
+                <div class="swiper-slide"> <img src="./assets/images/Brower2.png"/></div>
+                <div class="swiper-slide"><img src="./assets/images/Brower2.png"/></div>
               </div>
             </div>
           </div>
@@ -306,7 +420,9 @@
               <textarea placeholder="Write A Message"></textarea>
             </div>
             <div class="contact-form-btn">
-              <button> SUBMIT YOUR MESSAGE</button>
+              <button> 
+                <p>SUBMIT YOUR MESSAGE</p>
+              </button>
             </div>
           </div>
         </div>
@@ -317,7 +433,9 @@
           <h1>Bemo CLOUD - Người bạn đồng hành</h1>
           <p>Chúng tôi mong muốn được đồng hành cùng sự phát triển của doanh nghiệp bạn!</p>
           <div class="explore-content-btn">
-            <button>KHÁM PHÁ NGAY</button>
+            <button> 
+              <p>KHÁM PHÁ NGAY</p>
+            </button>
           </div>
         </div>
       </section>

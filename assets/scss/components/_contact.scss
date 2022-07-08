@@ -20,14 +20,20 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 
-    @include tablet {
-      grid-template-columns: repeat(1, 1fr);
-      width: 25.5rem;
-    }
-
-    @include mobile {
+    @include large {
+      grid-template-columns: repeat(1, 25.5rem);
+      justify-content: center;
       width: 100%;
     }
+
+    // @include tablet {
+    //   grid-template-columns: repeat(1, 1fr);
+    //   width: 25.5rem;
+    // }
+
+    // @include mobile {
+    //   width: 100%;
+    // }
   }
   &-card {
     min-width: 25.5rem;
@@ -54,9 +60,16 @@
     }
     &-content {
       margin-left: 1.6rem;
+      width: 75%;
+      h4 {
+        white-space: nowrap;
+        @include text-overflow;
+      }
       .card-text {
         color: #808080;
         font-size: 1.4rem;
+
+        @include text-overflow;
       }
     }
   }
@@ -65,6 +78,7 @@
     background: var(--color-background-1);
     margin-top: 2.4rem;
     border-radius: 0.8rem;
+    text-align: center;
     h2 {
       color: var(--color-txt-title);
       text-align: center;
@@ -73,6 +87,10 @@
       font-weight: 700;
       padding-top: 3.2rem;
       padding-bottom: 2.4rem;
+
+      white-space: nowrap;
+      @include text-overflow;
+      max-width: 100%;
     }
     &-group {
       display: grid;
@@ -124,11 +142,15 @@
         line-height: 2.4rem;
         color: white;
 
-        text-align: ce;
+        text-align: center;
         padding: 1.3rem 3rem;
         border: none;
         border-radius: 0.8rem;
         background: var(--color-info);
+        white-space: nowrap;
+        p {
+          @include text-overflow;
+        }
       }
     }
   }

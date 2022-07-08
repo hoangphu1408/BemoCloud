@@ -20,12 +20,18 @@ header {
     align-items: center;
     justify-content: flex-start;
     // padding-right: 8.8rem;
-    img {
+    &__main {
       width: 17.8rem;
       height: 3rem;
     }
 
-    @include tablet {
+    &__tiny {
+      display: none;
+      width: 4.8rem;
+      height: 3rem;
+    }
+
+    @include large {
       width: 100%;
       justify-content: space-between;
     }
@@ -34,22 +40,29 @@ header {
   &__hamburger {
     z-index: 100001;
     display: none;
-    @include tablet {
+    @include large {
       display: block;
     }
   }
   &__menu {
     justify-content: center;
-    &__list {
+
+    &__content {
       display: flex;
-      @include tablet {
-        flex-direction: column;
-        margin: auto;
+      // justify-content: space-between;
+      @include large {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: all 1s;
+        flex-direction: column;
+      }
+    }
+    &__list {
+      display: flex;
+      @include large {
+        flex-direction: column;
+        margin: auto;
       }
     }
 
@@ -60,8 +73,8 @@ header {
       align-items: center;
       &:first-child {
         padding-left: 0;
-        @include tablet {
-          padding-left: 2.2rem;
+        @include large {
+          padding-left: 1rem;
         }
       }
       &:last-child {
@@ -70,9 +83,13 @@ header {
       &.active .header__menu__link {
         color: var(--color-active);
 
-        @include tablet {
+        @include large {
           color: var(--color-txt-body-3);
         }
+      }
+
+      @include laptop {
+        padding: 0 1.2rem;
       }
     }
     &__link {
@@ -81,16 +98,19 @@ header {
       font-weight: 500;
       line-height: 2.4rem;
       font-weight: 1.6rem;
+
+      @include text-overflow;
     }
 
-    @include tablet {
+    @include large {
       display: none;
       position: fixed;
       z-index: 100000;
       background: var(--color-active);
-      width: 100%;
-      height: 100%;
       top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
       &.header__show {
         display: block;
       }
@@ -101,7 +121,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     color: white;
-    // padding-left: 17rem;
+    padding-left: 17rem;
+
+    cursor: pointer;
     &__flag {
       img {
         width: 2.4rem;
@@ -115,8 +137,15 @@ header {
       padding: 0 0.8rem;
     }
 
-    @include tablet {
-      display: none;
+    @include laptop {
+      padding-left: 2rem;
+    }
+
+    @include large {
+      // display: none;
+      padding-left: 0;
+      justify-content: center;
+      align-items: center;
     }
   }
   @include tablet {

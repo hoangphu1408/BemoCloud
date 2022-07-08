@@ -2,6 +2,91 @@
   margin-top: (-368px / 2);
   position: relative;
   z-index: 8;
+  .slick-slider {
+    padding-bottom: 4.4rem;
+    margin-right: 3px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: calc(50% + 2.2rem);
+    transform: translateY(calc(-50% - 4.4rem));
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    left: calc(1.6rem - 2.2rem);
+    z-index: 20;
+  }
+  .slick-next {
+    right: calc(1.6rem - 2.2rem);
+    z-index: 20;
+  }
+
+  .carousel__arrow {
+    width: 4.4rem;
+    height: 4.4rem;
+    background: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .slick-dots li button {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #0c3255;
+    opacity: 0.3;
+
+    @include tablet {
+      transform: scale(0.5);
+    }
+  }
+
+  .slick-dots {
+    li {
+      padding: 0 1.2rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &.slick-active button {
+        opacity: 1;
+      }
+    }
+  }
+
+  .slick-list {
+    padding-bottom: 0.5rem;
+  }
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
+  }
 }
 .carousel__item {
   // max-width: 262px;
@@ -10,26 +95,52 @@
   text-align: center;
   background-color: white;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
+  display: flex !important;
+  flex-direction: column;
+  &__top {
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
   &__image {
     padding: 2.4rem 2.4rem 1rem 2.4rem;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    row-gap: 1.6rem;
+  }
+
+  &__text,
+  &__footer {
+    margin-top: auto;
+    flex-shrink: 0;
   }
 
   &__title {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-txt-body-2);
-    margin-bottom: 1.6rem;
+    // margin-bottom: 1.6rem;
+    @include text-truncate(3);
   }
 
   &__text {
     font-size: 1.2rem;
     line-height: 1.6rem;
-    max-height: calc(1.6rem * 2);
-    min-height: calc(1.6rem * 2);
     padding: 0 2rem;
     margin-bottom: 2.4rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+    @include text-truncate(3);
   }
 
   &__button {
@@ -43,83 +154,10 @@
     border: 1px solid var(--color-txt-body-2);
     margin-bottom: 3.2rem;
     min-width: 167px;
-  }
-}
 
-.slick-slider {
-  padding-bottom: 4.4rem;
-  margin-right: 3px;
-}
-
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: calc(50% + 2.2rem);
-  transform: translateY(calc(-50% - 4.4rem));
-}
-
-.slick-prev {
-  left: calc(150px - 22px);
-  z-index: 20;
-}
-.slick-next {
-  right: calc(150px - 22px);
-  z-index: 20;
-}
-
-.carousel__arrow {
-  width: 4.4rem;
-  height: 4.4rem;
-  background: white;
-  border-radius: 0.8rem;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
-
-  i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.slick-dots {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-}
-
-.slick-dots li button {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 50%;
-  border: none;
-  background-color: #0c3255;
-  opacity: 0.3;
-
-  @include tablet {
-    transform: scale(0.5);
-  }
-}
-
-.slick-dots {
-  li {
-    padding: 0 1.2rem;
-    &:first-child {
-      padding-left: 0;
-    }
-    &:last-child {
-      padding-right: 0;
-    }
-    &.slick-active button {
-      opacity: 1;
+    white-space: nowrap;
+    p {
+      @include text-overflow;
     }
   }
-}
-
-.slick-list {
-  padding-bottom: 0.5rem;
 }

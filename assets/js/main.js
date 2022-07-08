@@ -14,6 +14,7 @@
     methods: function (e) {
       imJs.stickyHeader();
       imJs.toggleMenuMobile();
+      imJs.toggleDropdown();
       imJs.slickCarousel();
       imJs.swiperDashboard();
     },
@@ -62,6 +63,11 @@
         return false;
       });
     },
+    toggleDropdown: function () {
+      $('.header__language').on('click', function (e) {
+        $('.dropdown__language').toggleClass('show');
+      });
+    },
     slickCarousel: function () {
       const carousel = $('.carousel__list');
       carousel.slick({
@@ -81,8 +87,8 @@
           {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 2,
+              slidesToScroll: 2,
               dots: true,
             },
           },
@@ -114,11 +120,10 @@
     swiperDashboard: function () {
       const swiper = new Swiper('.dashboard-swiper .swiper-container', {
         slidesPerView: 1,
-        spaceBetween: 16,
         loop: true,
-        autoplay: {
-          delay: 2000,
-        },
+        autoplay: true,
+        speed: 1500,
+        // speedBetween: 5000,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,

@@ -19,7 +19,7 @@
     <header>
       <div class="container">
         <div class="header">
-          <div class="header__logo"><img src="./assets/images/Logo.png"/>
+          <div class="header__logo"><img class="header__logo__main" src="./assets/images/Logo.png"/>
             <div class="header__hamburger">
               <button class="hamburger-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
                 <svg width="44" height="44" viewBox="0 0 100 100">
@@ -31,21 +31,23 @@
             </div>
           </div>
           <div class="header__menu">
-            <ul class="header__menu__list">
-              <li class="header__menu__item active"><a class="header__menu__link" href="/">Home</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">About us</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Services</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Solution</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Blog</a></li>
-              <li class="header__menu__item"><a class="header__menu__link" href="/">Contact</a></li>
-            </ul>
-          </div>
-          <div class="header__language dropdown">
-            <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
-            <p class="header__language__text">eng</p><i class="fad fa-angle-down"></i>
-            <div class="dropdown-menu">
-              <li class="dropdown-item">hehe</li>
-              <li class="dropdown-item">hehe</li>
+            <div class="header__menu__content">
+              <ul class="header__menu__list">
+                <li class="header__menu__item active"><a class="header__menu__link" href="/">Home</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">About us</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Services</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Solution</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Blog</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">Contact</a></li>
+              </ul>
+              <div class="header__language dropdown">
+                <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
+                <p class="header__language__text">eng</p><i class="fad fa-angle-down"></i>
+                <div class="dropdown__language dropdown-menu">
+                  <li class="dropdown-item">hehe</li>
+                  <li class="dropdown-item">hehe</li>
+                </div>
+              </div>
             </div>
           </div>
         </div>

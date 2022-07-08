@@ -1,21 +1,23 @@
 .container {
   position: relative;
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 16px;
+  padding-right: 16px;
 
+  @include laptop {
+    max-width: 85%;
+  }
   @include tablet {
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 95%;
   }
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -18px;
-  margin-left: -18px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 
 .no-gutters {
@@ -115,8 +117,8 @@
 .col-2xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .col {

@@ -1,25 +1,28 @@
 .solution {
   position: relative;
-  // padding-bottom: 5rem;
   padding: 8rem 0;
   background-color: white;
+
+  .container {
+    z-index: 3;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3.6rem;
+    // z-index: 3;
     position: relative;
-    z-index: 3;
-
-    @include pc {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding-right: 150px;
-    }
-    @include tablet {
+    @include laptop {
       display: flex;
       flex-direction: column-reverse;
-      padding-left: 3rem;
-      padding-right: 3rem;
+    }
+  }
+
+  &__left {
+    margin-left: -24rem;
+    @include laptop {
+      margin-left: 0;
     }
   }
 
@@ -39,6 +42,10 @@
     &__ico {
       margin-right: 1.2rem;
       color: var(--color-active);
+    }
+
+    &__text {
+      @include text-truncate(8);
     }
   }
 

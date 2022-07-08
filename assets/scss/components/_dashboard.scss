@@ -21,17 +21,16 @@
   }
   &__text {
     width: 653px;
-
+    @include text-truncate(10);
     @include tablet {
       width: 100%;
     }
   }
 
   &-swiper {
-    display: inline-block;
-    width: 961px;
-    margin-left: -1.6rem;
-
+    // max-width: 83.3333333333%;
+    // margin-top: 16px;
+    max-width: 961px;
     @include tablet {
       width: 100%;
     }
@@ -42,9 +41,13 @@
   overflow: visible;
 }
 
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.9);
+  transition: all 1s;
+}
+
 .swiper-slide {
-  transform: scale(1, 0.79);
-  margin-right: 0;
+  // margin-right: 0;
 }
 
 .swiper-slide-active {
