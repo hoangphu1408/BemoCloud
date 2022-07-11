@@ -15,6 +15,7 @@
       imJs.stickyHeader();
       imJs.toggleMenuMobile();
       imJs.toggleDropdown();
+      imJs.setLanguage();
       imJs.slickCarousel();
       imJs.swiperDashboard();
     },
@@ -68,6 +69,23 @@
         $('.dropdown__language').toggleClass('show');
       });
     },
+
+    setLanguage: function () {
+      let languageList = [
+        { lang: 'vietnam', acronym: 'Vi' },
+        { lang: 'english', acronym: 'ENG' },
+        { lang: 'japan', acronym: 'JP' },
+      ];
+      $('.header__language .dropdown-item').on('click', function (e) {
+        let item = $(this);
+        let selectedLang = item.text().trim().toLowerCase();
+        languageList.forEach((item) => {
+          if (item.lang === selectedLang) {
+            localStorage.setItem('lang', item.acronym);
+          }
+        });
+      });
+    },
     slickCarousel: function () {
       const carousel = $('.carousel__list');
       carousel.slick({
@@ -104,7 +122,7 @@
             },
           },
           {
-            breakpoint: 500,
+            breakpoint: 576,
             settings: {
               dots: true,
               arrow: false,
