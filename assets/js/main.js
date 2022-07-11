@@ -81,7 +81,7 @@
         let selectedLang = item.text().trim().toLowerCase();
         languageList.forEach((item) => {
           if (item.lang === selectedLang) {
-            localStorage.setItem('lang', item.acronym);
+            $('.header__language__text').text(item.acronym);
           }
         });
       });
