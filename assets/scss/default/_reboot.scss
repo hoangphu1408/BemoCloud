@@ -18,16 +18,17 @@ body {
   overflow-x: hidden;
   &.no-scroll {
     overflow-y: hidden;
-    // &:after {
-    //   content: '';
-    //   position: fixed;
-    //   left: 0;
-    //   top: 0;
-    //   bottom: 0;
-    //   right: 0;
-    //   background-color: rgba($color: #000000, $alpha: 0.6);
-    //   z-index: 300;
-    // }
+    &:after {
+      content: '';
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      // z-index: 300;
+      z-index: 9;
+    }
   }
   @media (max-width: 575.98px) {
     // font-size: 0.875rem;

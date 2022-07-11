@@ -17,43 +17,42 @@
   </head>
   <body class="index-page">
     <!-- *** HEADER *** //-->
-    <header>
+    <header class="header--sticky">
       <div class="container">
         <div class="header">
-          <div class="header__logo"><img class="header__logo__main" src="./assets/images/Logo.png"/>
-            <div class="header__hamburger">
-              <button class="hamburger-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-                <svg width="44" height="44" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
-                  <path class="line line2" d="M 20,50 H 80"></path>
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
-                </svg>
-              </button>
+          <div class="header__logo"><img class="header__logo__main" src="./assets/images/Logo.png"/></div>
+          <div class="header__menu">
+            <ul class="header__menu__list">
+              <li class="header__menu__item active"><a class="header__menu__link" href="/">Home</a></li>
+              <li class="header__menu__item"><a class="header__menu__link" href="/">About us</a></li>
+              <li class="header__menu__item"><a class="header__menu__link" href="/">Services</a></li>
+              <li class="header__menu__item"><a class="header__menu__link" href="/">Solution</a></li>
+              <li class="header__menu__item"><a class="header__menu__link" href="/">Blog</a></li>
+              <li class="header__menu__item"><a class="header__menu__link" href="/">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header__language dropdown">
+            <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
+            <p class="header__language__text">eng</p><i class="fad fa-angle-down"></i>
+            <div class="dropdown__language dropdown-menu">
+              <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
+                <p>Vietnam</p>
+              </li>
+              <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
+                <p>Japan</p>
+              </li>
             </div>
           </div>
-          <div class="header__menu">
-            <div class="header__menu__content">
-              <ul class="header__menu__list">
-                <li class="header__menu__item active"><a class="header__menu__link" href="/">Home</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">About us</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Services</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Solution</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Blog</a></li>
-                <li class="header__menu__item"><a class="header__menu__link" href="/">Contact</a></li>
-              </ul>
-              <div class="header__language dropdown">
-                <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
-                <p class="header__language__text">eng</p><i class="fad fa-angle-down"></i>
-                <div class="dropdown__language dropdown-menu">
-                  <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
-                    <p>VI</p>
-                  </li>
-                  <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
-                    <p>VI</p>
-                  </li>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="header__mobile">           <img class="header__logo__main" src="./assets/images/Logo.png"/>
+          <div class="header__hamburger">
+            <button class="hamburger-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+              <svg width="44" height="44" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+                <path class="line line2" d="M 20,50 H 80"></path>
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -67,7 +66,7 @@
             <div class="banner__content"> 
               <h1 class="banner__content__title">BỘ GIẢI PHÁP CÔNG NGHỆ CHUYỂN ĐỔI SỐ DOANH NGHIỆP</h1>
               <p class="banner__content__text">Bemo Cloud cung cấp bộ giải pháp công nghệ toàn diện hỗ trợ cho quá trình chuyển đổi số và sự phát triển bền vững của doanh nghiệp. Chúng tôi mong muốn đi cùng và hỗ trợ cho sự phát triển của doanh nghiệp.</p>
-              <button class="banner__content__button"> 
+              <button class="btn btn-secondary banner__content__button"> 
                 <p>CONTACT</p>
               </button>
             </div>
@@ -424,7 +423,7 @@
               <textarea placeholder="Write A Message"></textarea>
             </div>
             <div class="contact-form-btn">
-              <button> 
+              <button class="btn btn-primary">
                 <p>SUBMIT YOUR MESSAGE</p>
               </button>
             </div>
@@ -437,7 +436,7 @@
           <h1>Bemo CLOUD - Người bạn đồng hành</h1>
           <p>Chúng tôi mong muốn được đồng hành cùng sự phát triển của doanh nghiệp bạn!</p>
           <div class="explore-content-btn">
-            <button> 
+            <button class="btn btn-secondary">
               <p>KHÁM PHÁ NGAY</p>
             </button>
           </div>

@@ -32,8 +32,8 @@
       //   $('.header-default .main-menu').toggleClass('show');
       //   $('body').toggleClass('no-scroll');
       // });
-      $('.header .header__hamburger').on('click', function (e) {
-        $('.header .header__menu').toggleClass('header__show');
+      $('.header__mobile .header__hamburger').on('click', function (e) {
+        $('.header').toggleClass('header__show');
         $('body').toggleClass('no-scroll');
       });
     },
@@ -74,8 +74,8 @@
         dots: true,
         arrow: true,
         infinite: true,
-        autoplay: true,
-        speed: 200,
+        // autoplay: true,
+        // speed: 200,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow:

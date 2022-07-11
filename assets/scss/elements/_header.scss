@@ -1,7 +1,7 @@
 header {
   position: absolute;
   width: 100%;
-  padding: 2.8rem 0;
+  padding: 2.5rem 0;
   z-index: 10;
 }
 
@@ -19,21 +19,22 @@ header {
   &__logo {
     align-items: center;
     justify-content: flex-start;
-    // padding-right: 8.8rem;
+    padding-right: 6.8rem;
     &__main {
       width: 17.8rem;
       height: 3rem;
     }
 
-    &__tiny {
-      display: none;
-      width: 4.8rem;
-      height: 3rem;
-    }
-
     @include large {
       width: 100%;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      // padding-right: 0;
+      // flex-shrink: 0;
+      // object-fit: cover;
+      background-color: var(--color-background-3);
+
+      padding: 1.3rem 0;
     }
   }
 
@@ -47,22 +48,19 @@ header {
   &__menu {
     justify-content: center;
 
-    &__content {
-      display: flex;
-      // justify-content: space-between;
-      @include large {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        flex-direction: column;
-      }
-    }
     &__list {
       display: flex;
+      // @include large {
+      //   flex-direction: column;
+      //   margin: auto;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      // }
+
       @include large {
         flex-direction: column;
-        margin: auto;
       }
     }
 
@@ -75,7 +73,7 @@ header {
       &:first-child {
         padding-left: 0;
         @include large {
-          padding-left: 1.2rem;
+          padding-left: 2rem;
         }
       }
       &:last-child {
@@ -97,8 +95,8 @@ header {
         }
       }
 
-      @include laptop {
-        padding: 0 1.2rem;
+      @include large {
+        padding: 1rem 2rem;
       }
     }
     &__link {
@@ -111,19 +109,21 @@ header {
       @include text-overflow;
     }
 
-    @include large {
-      display: none;
-      position: fixed;
-      z-index: 100000;
-      background: var(--color-active);
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      &.header__show {
-        display: block;
-      }
-    }
+    // @include large {
+    //   display: block;
+    //   position: fixed;
+    //   z-index: 100000;
+    //   background: var(--color-active);
+    //   top: 0;
+    //   width: 50%;
+    //   left: -50%;
+    //   height: 100%;
+    //   transition: all 1s;
+    //   &.header__show {
+    //     display: block;
+    //     left: 0;
+    //   }
+    // }
   }
 
   &__language {
@@ -148,14 +148,21 @@ header {
 
     .dropdown__language {
       left: auto;
-      background: transparent;
+      background: white;
       border: none;
+      padding: 1rem;
+
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
 
       .dropdown-item {
         display: flex;
-        justify-content: center;
         align-items: center;
         color: white;
+
+        background-color: var(--color-background-3);
+        border-radius: 0.8rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem 2rem;
         img {
           border-radius: 50%;
         }
@@ -178,13 +185,53 @@ header {
 
     @include large {
       // display: none;
-      padding-left: 0;
+      margin-top: auto;
       justify-content: center;
       align-items: center;
+      width: 100%;
+      padding: 1.3rem 0;
+      background-color: var(--color-background-3);
     }
+  }
+
+  &__mobile {
+    display: none;
+    align-items: center;
+    @include large {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @include large {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 100000;
+    background: var(--color-active);
+    width: 40%;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    transition: all 1s;
+    &__show {
+      display: flex;
+      left: 0;
+    }
+  }
+
+  @include mobile {
+    width: 60%;
   }
   @include tablet {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background: var(--color-background-3);
 }

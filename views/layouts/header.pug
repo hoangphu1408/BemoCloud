@@ -1,35 +1,35 @@
-header
+header.header--sticky
     .container
         .header
             .header__logo
                 img.header__logo__main(src="./assets/images/Logo.png")
-
-                .header__hamburger
-                    include hamburger-icon
             .header__menu
-                .header__menu__content
-                    ul.header__menu__list
-                        li.header__menu__item.active
-                            a.header__menu__link(href="/") Home
-                        li.header__menu__item
-                            a.header__menu__link(href="/") About us
-                        li.header__menu__item
-                            a.header__menu__link(href="/") Services
-                        li.header__menu__item
-                            a.header__menu__link(href="/") Solution
-                        li.header__menu__item
-                            a.header__menu__link(href="/") Blog
-                        li.header__menu__item
-                            a.header__menu__link(href="/") Contact
-                    .header__language.dropdown
-                        .header__language__flag
-                            img(src="./assets/images/us-flag 1.png")
-                        p.header__language__text eng
-                        i.fad.fa-angle-down
-                        .dropdown__language.dropdown-menu
-                            li.dropdown-item 
-                                img(src="./assets/images/us-flag 1.png")
-                                p VI
-                            li.dropdown-item 
-                                img(src="./assets/images/us-flag 1.png")
-                                p VI
+                ul.header__menu__list
+                    li.header__menu__item.active
+                        a.header__menu__link(href="/") Home
+                    li.header__menu__item
+                        a.header__menu__link(href="/") About us
+                    li.header__menu__item
+                        a.header__menu__link(href="/") Services
+                    li.header__menu__item
+                        a.header__menu__link(href="/") Solution
+                    li.header__menu__item
+                        a.header__menu__link(href="/") Blog
+                    li.header__menu__item
+                        a.header__menu__link(href="/") Contact
+            .header__language.dropdown
+                .header__language__flag
+                    img(src="./assets/images/us-flag 1.png")
+                p.header__language__text eng
+                i.fad.fa-angle-down
+                .dropdown__language.dropdown-menu
+                    li.dropdown-item 
+                        img(src="./assets/images/us-flag 1.png")
+                        p Vietnam
+                    li.dropdown-item 
+                        img(src="./assets/images/us-flag 1.png")
+                        p Japan
+        .header__mobile            
+            img.header__logo__main(src="./assets/images/Logo.png")
+            .header__hamburger
+                include hamburger-icon
