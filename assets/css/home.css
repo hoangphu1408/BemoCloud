@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #8200ff;
+  --color-primary: #1c73c4;
   --color-primary-light: #b8d7f5;
   --color-primary-light-2: #dbebfa;
   --color-secondary: #ffa800;
@@ -63,7 +63,7 @@
 
 @media only screen and (max-width: 576px) {
   .banner__content__title {
-    font-size: 3.6rem;
+    font-size: 3rem;
     line-height: 5.6rem;
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -126,6 +126,12 @@
   margin-top: -184px;
   position: relative;
   z-index: 8;
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel .container {
+    max-width: 70%;
+  }
 }
 
 .carousel .slick-slider {
@@ -247,6 +253,8 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: center;
+  align-items: center;
   row-gap: 1.6rem;
 }
 
@@ -283,13 +291,14 @@
 .carousel__item__button {
   color: var(--color-txt-body-2);
   font-size: 1.4rem;
-  line-height: 2.8rem;
+  line-height: 3.2rem;
   background-color: transparent;
   padding: 0 5rem;
   border-radius: 0.4rem;
   border: 1px solid var(--color-txt-body-2);
   margin-bottom: 3.2rem;
-  min-width: 167px;
+  min-width: 16.7rem;
+  min-height: 3.2rem;
   white-space: nowrap;
 }
 
@@ -804,9 +813,11 @@
 }
 
 .explore-content-btn button {
+  line-height: 2rem;
   background: transparent;
   border: 2px solid white;
   padding: 1.5rem 7.5rem;
+  font-size: 1.6rem;
   border-radius: 0;
   color: white;
   text-transform: uppercase;

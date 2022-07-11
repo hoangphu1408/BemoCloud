@@ -2,6 +2,11 @@
   margin-top: (-368px / 2);
   position: relative;
   z-index: 8;
+  .container {
+    @include mobile {
+      max-width: 70%;
+    }
+  }
   .slick-slider {
     padding-bottom: 4.4rem;
     margin-right: 3px;
@@ -116,7 +121,8 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-
+    justify-content: center;
+    align-items: center;
     row-gap: 1.6rem;
   }
 
@@ -146,14 +152,15 @@
   &__button {
     color: var(--color-txt-body-2);
     font-size: 1.4rem;
-    line-height: 2.8rem;
+    line-height: 3.2rem;
     background-color: transparent;
 
     padding: 0 5rem;
     border-radius: 0.4rem;
     border: 1px solid var(--color-txt-body-2);
     margin-bottom: 3.2rem;
-    min-width: 167px;
+    min-width: 16.7rem;
+    min-height: 3.2rem;
 
     white-space: nowrap;
     p {

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 :root {
-  --color-primary: #8200ff;
+  --color-primary: #1c73c4;
   --color-primary-light: #b8d7f5;
   --color-primary-light-2: #dbebfa;
   --color-secondary: #ffa800;
@@ -17451,32 +17451,32 @@ progress {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #8200ff;
-  border-color: #8200ff;
+  background-color: #1c73c4;
+  border-color: #1c73c4;
 }
 
 .btn-primary:hover, .btn-primary:active {
-  background-color: #7500e6;
-  border-color: #7500e6;
+  background-color: #c5dff7;
+  border-color: #1966ae;
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(130, 0, 255, 0.2);
+  box-shadow: 0 0 0 0.25rem rgba(28, 115, 196, 0.2);
 }
 
 .btn-outline-primary {
-  color: #8200ff;
-  border-color: #8200ff;
+  color: #1c73c4;
+  border-color: #1c73c4;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:active {
   color: #ffffff;
-  background-color: #7500e6;
-  border-color: #7500e6;
+  background-color: #1966ae;
+  border-color: #1966ae;
 }
 
 .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(130, 0, 255, 0.2);
+  box-shadow: 0 0 0 0.25rem rgba(28, 115, 196, 0.2);
 }
 
 .btn-secondary {
@@ -17657,7 +17657,7 @@ progress {
 .dropdown-item {
   display: flex;
   align-items: center;
-  color: #8200ff;
+  color: #1c73c4;
   width: 100%;
   padding: 0.75rem 1.125rem;
   clear: both;
@@ -17685,15 +17685,15 @@ progress {
 }
 
 .dropdown-item.dropdown-item-selected {
-  background-color: #8200ff;
+  background-color: #1c73c4;
 }
 
 .dropdown-item:not(.dropdown-item-selected):hover {
-  background-color: #8c14ff;
+  background-color: #1f7dd6;
 }
 
 .dropdown-item:not(.dropdown-item-selected):active {
-  background-color: #8200ff;
+  background-color: #1c73c4;
 }
 
 .dropdown-item:first-child {
@@ -17766,7 +17766,7 @@ progress {
 }
 
 .modal-header .modal-title {
-  color: #8200ff;
+  color: #1c73c4;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -18186,7 +18186,6 @@ header {
   justify-content: flex-end;
   align-items: center;
   color: white;
-  padding-left: 17rem;
   cursor: pointer;
 }
 
@@ -18206,6 +18205,7 @@ header {
   background: white;
   border: none;
   padding: 1rem;
+  margin-top: 1rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
 }
 
@@ -18217,6 +18217,7 @@ header {
   border-radius: 0.8rem;
   margin-bottom: 0.5rem;
   padding: 1rem 2rem;
+  min-width: 15rem;
   transition: all 0.5s;
 }
 
@@ -18234,6 +18235,13 @@ header {
 
 .header__language .dropdown__language .dropdown-item:hover p {
   color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__language .dropdown__language {
+    transform: translateY(calc(-100% - 6rem));
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

@@ -110,7 +110,7 @@
               arrow: false,
               prevArrow: null,
               nextArrow: null,
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
             },
           },

@@ -30,7 +30,7 @@
       // @include text-line-overflow(6.8rem, 3);
       @include text-truncate(3);
       @include mobile {
-        font-size: 3.6rem;
+        font-size: 3rem;
         line-height: 5.6rem;
         @include text-truncate(5);
       }
