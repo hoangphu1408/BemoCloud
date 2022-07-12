@@ -87,7 +87,7 @@
   word-break: break-word;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .services__item__left {
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@
   word-break: break-word;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .services__item__right {
     grid-template-columns: repeat(1, 1fr);
   }

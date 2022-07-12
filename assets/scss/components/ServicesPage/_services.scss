@@ -44,7 +44,7 @@
         }
       }
 
-      @include large {
+      @include laptop {
         @include flex(center, center);
         flex-direction: column;
       }
@@ -101,7 +101,7 @@
         }
       }
 
-      @include large {
+      @include laptop {
         grid-template-columns: repeat(1, 1fr);
       }
 
