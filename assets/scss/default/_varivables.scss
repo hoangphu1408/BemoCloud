@@ -2,6 +2,8 @@ $theme-colors: (
   'primary': #1c73c4,
   'primary-light': #b8d7f5,
   'primary-light-2': #dbebfa,
+  'primary-light-3': #f1f6f9,
+  'primary-light-4': #175ea1,
   'secondary': #ffa800,
   'txt-body': #202121,
   'txt-body-2': #1c73c4,
@@ -15,6 +17,8 @@ $theme-colors: (
   'warning': #f9b506,
   'error': #da0b0b,
   'active': #ffa800,
+  'gray-1': #4d4d4d,
+  'gray-2': #808080,
 );
 
 $theme-fonts: (
@@ -35,7 +39,14 @@ $pc-width: 1680px;
       $map: $theme-colors,
       $key: 'primary-light-2'
     )};
-
+  --color-primary-light-3: #{map-get(
+      $map: $theme-colors,
+      $key: 'primary-light-3'
+    )};
+  --color-primary-light-4: #{map-get(
+      $map: $theme-colors,
+      $key: 'primary-light-4'
+    )};
   --color-secondary: #{map-get($map: $theme-colors, $key: 'secondary')};
 
   --color-txt-body: #{map-get($map: $theme-colors, $key: 'txt-body')};
@@ -53,4 +64,6 @@ $pc-width: 1680px;
   --font-body: #{map-get($map: $theme-fonts, $key: 'body')};
   --font-icons: #{map-get($map: $theme-fonts, $key: 'icons')};
   --color-active: #{map-get($map: $theme-colors, $key: 'active')};
+  --color-gray-1: #{map-get($map: $theme-colors, $key: 'gray-1')};
+  --color-gray-2: #{map-get($map: $theme-colors, $key: 'gray-2')};
 }

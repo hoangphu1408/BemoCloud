@@ -47,3 +47,9 @@
   -webkit-box-orient: vertical;
   word-break: break-word;
 }
+
+@mixin flex($justify-content, $align-item) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}

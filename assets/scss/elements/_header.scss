@@ -1,5 +1,5 @@
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding: 2.5rem 0;
   z-index: 10;
@@ -20,6 +20,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     padding-right: 6.8rem;
+    cursor: pointer;
     &__main {
       width: 17.8rem;
       height: 3rem;
@@ -29,12 +30,8 @@ header {
       width: 100%;
       align-items: center;
       justify-content: center;
-      // padding-right: 0;
-      // flex-shrink: 0;
-      // object-fit: cover;
-      background-color: var(--color-background-3);
 
-      padding: 1.3rem 0;
+      padding: 3rem 0;
     }
   }
 
@@ -50,16 +47,9 @@ header {
 
     &__list {
       display: flex;
-      // @include large {
-      //   flex-direction: column;
-      //   margin: auto;
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   transform: translate(-50%, -50%);
-      // }
 
       @include large {
+        width: 90%;
         flex-direction: column;
       }
     }
@@ -69,7 +59,15 @@ header {
       white-space: nowrap;
       display: flex;
       align-items: center;
-
+      cursor: pointer;
+      i {
+        display: none;
+        color: white;
+        @include large {
+          display: block;
+          margin-right: 1rem;
+        }
+      }
       &:first-child {
         padding-left: 0;
         @include large {
@@ -79,24 +77,29 @@ header {
       &:last-child {
         padding-right: 0;
       }
-      &.active .header__menu__link {
-        color: var(--color-active);
 
+      &.active {
         @include large {
-          color: var(--color-txt-body-3);
+          background-color: #49586682;
         }
       }
-
-      &:hover .header__menu__link {
+      &.active .header__menu__link,
+      &.active i {
         color: var(--color-active);
+      }
 
-        @include large {
-          color: var(--color-txt-body-3);
-        }
+      &:hover .header__menu__link,
+      &:hover i {
+        color: var(--color-active);
       }
 
       @include large {
         padding: 1rem 2rem;
+        border-radius: 0.8rem;
+        margin-bottom: 0.5rem;
+        &:hover {
+          background-color: #49586682;
+        }
       }
     }
     &__link {
@@ -107,31 +110,23 @@ header {
       font-weight: 1.6rem;
       transition: all 0.5s;
       @include text-overflow;
+      @include large {
+        text-transform: capitalize;
+        font-weight: 400;
+      }
     }
 
-    // @include large {
-    //   display: block;
-    //   position: fixed;
-    //   z-index: 100000;
-    //   background: var(--color-active);
-    //   top: 0;
-    //   width: 50%;
-    //   left: -50%;
-    //   height: 100%;
-    //   transition: all 1s;
-    //   &.header__show {
-    //     display: block;
-    //     left: 0;
-    //   }
-    // }
+    @include large {
+      width: 100%;
+    }
   }
 
   &__language {
     justify-content: flex-end;
     align-items: center;
     color: white;
-    // padding-left: 17rem;
-
+    min-width: 10rem;
+    user-select: none;
     cursor: pointer;
     &__flag {
       img {
@@ -148,21 +143,21 @@ header {
 
     .dropdown__language {
       left: auto;
-      background: white;
-      border: none;
-      padding: 1rem;
-      margin-top: 1rem;
+      // background: white;
+      // border: none;
+      // padding: 1rem;
+      // margin-top: 1rem;
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
 
       .dropdown-item {
         display: flex;
         align-items: center;
-        color: white;
+        color: black;
 
-        background-color: var(--color-background-3);
-        border-radius: 0.8rem;
-        margin-bottom: 0.5rem;
-        padding: 1rem 2rem;
+        // background-color: var(--color-background-3);
+        // border-radius: 0.8rem;
+        // margin-bottom: 0.5rem;
+        // padding: 1rem 2rem;
         min-width: 15rem;
         img {
           border-radius: 50%;
@@ -172,7 +167,7 @@ header {
         }
         transition: all 0.5s;
         &:hover {
-          background: var(--color-active);
+          background-color: #49586682;
           p {
             color: black;
           }
@@ -182,6 +177,8 @@ header {
       @include large {
         transform: translateY(calc(-100% - 6rem));
         width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
 
@@ -215,7 +212,7 @@ header {
     justify-content: center;
     position: fixed;
     z-index: 100000;
-    background: var(--color-active);
+    background: var(--color-background-3);
     width: 40%;
     top: 0;
     left: -100%;
@@ -237,7 +234,5 @@ header {
 }
 
 .sticky {
-  position: sticky;
-  top: 0;
   background: var(--color-background-3);
 }

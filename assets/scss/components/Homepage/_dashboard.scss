@@ -30,6 +30,7 @@
   &-swiper {
     // max-width: 83.3333333333%;
     // margin-top: 16px;
+    cursor: pointer;
     max-width: 920px;
     @include tablet {
       width: 100%;
