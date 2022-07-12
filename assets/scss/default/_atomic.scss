@@ -171,6 +171,7 @@
     line-height: 4.4rem;
     font-weight: 700;
     color: var(--color-txt-body-3);
+    text-transform: uppercase;
 
     @include text-truncate(3);
 

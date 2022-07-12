@@ -1,0 +1,12 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "services-detail-page"
+    - title_page = "Bemo"
+block css
+    link(rel="stylesheet", href="./assets/css/services-detail.css")
+block main
+    include ../components/banner.pug
+    include ../components/ServicesDetailPage/services-banner.pug
+    include ../components/ServicesDetailPage/recruitment.pug
+    include ../components/explore.pug

@@ -15,6 +15,8 @@
       imJs.stickyHeader();
       imJs.toggleMenuMobile();
       imJs.toggleDropdown();
+      imJs.activeMenu();
+      imJs.linkToServiceDetail();
       imJs.setLanguage();
       imJs.slickCarousel();
       imJs.swiperDashboard();
@@ -84,6 +86,25 @@
             $('.header__language__text').text(item.acronym);
           }
         });
+      });
+    },
+
+    activeMenu: function () {
+      window.onload = function () {
+        let currentHref = location.href;
+        $('.header__menu__link').each(function () {
+          let $this = $(this);
+
+          if ($this[0].href === currentHref) {
+            $this.parent().addClass('active');
+          }
+        });
+      };
+    },
+
+    linkToServiceDetail: function () {
+      $('.services__item').on('click', function (e) {
+        window.location.href = 'http://localhost:8080/services-detail.html';
       });
     },
     slickCarousel: function () {

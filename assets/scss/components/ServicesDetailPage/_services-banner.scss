@@ -1,0 +1,47 @@
+.services-banner {
+  background-image: url('/assets/images/service-banner.png');
+  min-height: 42rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 8rem 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3.2rem;
+
+    @include large {
+      width: 50%;
+      margin: 0 auto;
+      grid-row-gap: 3.2rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include tablet {
+      width: 75%;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    &__image {
+      margin-bottom: 1.6rem;
+    }
+    &__title {
+      color: var(--color-txt-body-3);
+      font-size: 2rem;
+      line-height: 3.2rem;
+      margin-bottom: 0.8rem;
+
+      @include text-truncate(1);
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+
+      @include text-truncate(4);
+    }
+  }
+}

@@ -354,6 +354,10 @@
   margin-bottom: 1.6rem;
 }
 
+.solution__title h1 {
+  text-transform: capitalize;
+}
+
 .solution__item {
   display: flex;
   margin-bottom: 1.6rem;

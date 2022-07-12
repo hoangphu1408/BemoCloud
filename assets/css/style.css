@@ -221,6 +221,7 @@
   line-height: 4.4rem;
   font-weight: 700;
   color: var(--color-txt-body-3);
+  text-transform: uppercase;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   overflow: hidden;
@@ -18802,6 +18803,88 @@ header {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   word-break: break-word;
+}
+
+.explore {
+  height: 380px;
+  background: url("/assets/images/worker.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.explore-overplay {
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  height: 100%;
+  background: #0c3255;
+}
+
+.explore-content {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.explore-content h1 {
+  font-size: 3.2rem;
+  line-height: 3.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.explore-content h1,
+.explore-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.explore-content-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.explore-content-btn button {
+  line-height: 2rem;
+  background: transparent;
+  border: 2px solid white;
+  padding: 1.5rem 7.5rem;
+  font-size: 1.6rem;
+  border-radius: 0;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.explore-content-btn button p {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1200px) {
+  .explore-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .explore-content h1 {
+    font-size: 2.5rem;
+  }
+  .explore-content p {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

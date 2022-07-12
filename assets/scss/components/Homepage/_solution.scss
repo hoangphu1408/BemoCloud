@@ -32,6 +32,10 @@
 
   &__title {
     margin-bottom: 1.6rem;
+
+    h1 {
+      text-transform: capitalize;
+    }
   }
 
   &__item {
