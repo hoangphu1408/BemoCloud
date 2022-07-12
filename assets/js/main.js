@@ -104,7 +104,7 @@
 
     linkToServiceDetail: function () {
       $('.services__item').on('click', function (e) {
-        window.location.href = 'http://localhost:8080/services-detail.html';
+        window.location.href = '/services-detail.html';
       });
     },
     slickCarousel: function () {
