@@ -67,6 +67,12 @@
       grid-auto-rows: max-content;
       &--details {
         @include flex(initial, center);
+        overflow-x: scroll;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
 
       &--ico {

@@ -119,6 +119,12 @@
   display: flex;
   justify-content: initial;
   align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.services__item__right--details::-webkit-scrollbar {
+  display: none;
 }
 
 .services__item__right--ico {
