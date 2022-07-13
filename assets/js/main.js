@@ -113,8 +113,8 @@
         dots: true,
         arrow: true,
         infinite: true,
-        // autoplay: true,
-        // speed: 200,
+        autoplay: true,
+        speed: 200,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow:

@@ -27,10 +27,6 @@
   padding: 5.6rem 0;
 }
 
-.services__wrapper {
-  padding: 0;
-}
-
 .services__item {
   cursor: pointer;
   border-radius: 0.8rem;

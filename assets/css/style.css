@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
   --color-primary: #1c73c4;
   --color-primary-light: #b8d7f5;
@@ -216,7 +217,6 @@
 }
 
 .section__title__main {
-  margin-top: 0.7rem;
   font-size: 3.2rem;
   line-height: 4.4rem;
   font-weight: 700;
@@ -246,22 +246,10 @@
 
 .container {
   position: relative;
-  max-width: 1140px;
+  max-width: 1172px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-}
-
-@media only screen and (max-width: 1200px) {
-  .container {
-    max-width: 85%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 95%;
-  }
 }
 
 .row {
@@ -18497,7 +18485,7 @@ header {
 }
 
 .chooseBemo {
-  padding-top: 8rem;
+  padding: 8rem 0;
   background-color: white;
   overflow: hidden;
 }
@@ -18762,7 +18750,6 @@ header {
 
 .banner {
   min-height: 45rem;
-  background-image: url("/assets/images/banner-image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

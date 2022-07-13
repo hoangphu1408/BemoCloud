@@ -1,6 +1,5 @@
-
 mixin banner(backgroundUrl, title, content)
-    section.banner
+    section.banner(style='background-image: url('+backgroundUrl+')')
         .banner__content
             .container
                 h1.banner__content__title=title

@@ -6,7 +6,16 @@ block params
 block css
     link(rel="stylesheet", href="./assets/css/services-detail.css")
 block main
-    include ../components/banner.pug
+
+    include ../mixins/service-content.pug
+    
+    //- include ../components/banner.pug
+
+    -
+        let bgURL = '/assets/images/banner-image.png';
+        let serviceTitle = "Dịch vụ";
+        let serviceContent = "Sự hài lòng của Khách hàng là mục tiêu cao nhất của chúng tôi";
+    +banner(bgURL, serviceTitle, serviceContent)
     include ../components/ServicesDetailPage/services-banner.pug
-    include ../components/ServicesDetailPage/recruitment.pug
+    include ../components/ServicesDetailPage/services-content.pug
     include ../components/explore.pug

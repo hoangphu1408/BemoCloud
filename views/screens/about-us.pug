@@ -1,0 +1,20 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "about-us-page"
+    - title_page = "Bemo"
+block css
+    link(rel="stylesheet", href="./assets/css/about-us.css")
+block main
+
+    include ../mixins/service-content.pug
+    
+    //- include ../components/banner.pug
+
+    -
+        let bgURL = '/assets/images/banner-image-2.png';
+        let serviceTitle = "VỀ CHÚNG TÔI";
+        let serviceContent = "Sự hài lòng của Khách hàng là mục tiêu cao nhất của chúng tôi";
+    +banner(bgURL, serviceTitle, serviceContent)
+    include ../components/choose-bemo.pug
+    include ../components/AboutUsPage/main-content.pug

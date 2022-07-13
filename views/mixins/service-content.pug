@@ -1,0 +1,23 @@
+mixin service-content(sectionClass,title, mainTitle,imageLeft= true,imageSrc,contentList)
+    section.service__detail__section(class=sectionClass)
+        .container
+            .service__detail__title 
+                h3.section__title.line-before= title
+                h1.section__title__main= mainTitle
+            .service__detail__content 
+                if imageLeft
+                    .service__detail__content__image
+                        image(src=imageSrc)
+                    .service__detail__content__text__list
+                        each item in contentList
+                            .service__detail__content__text__item
+                                h3.service__detail__content__title.fw-700=item.title
+                                p.service__detail__content__text.fw-400=item.text
+                else
+                    .service__detail__content__image.right
+                        image(src=imageSrc)
+                    .service__detail__content__text__list
+                        each item in contentList
+                            .service__detail__content__text__item
+                                h3.service__detail__content__title.fw-700=item.title
+                                p.service__detail__content__text.fw-400=item.text

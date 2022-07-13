@@ -16,6 +16,9 @@ html(lang="en")
         // *** TITLE *** //
         title #{title_page}
     body(class=`${class_body}`)
+        // *** MIXIN *** //
+        
+        include ../mixins/banner.pug
         // *** HEADER *** //
         block header
             include header

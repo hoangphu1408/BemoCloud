@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #1c73c4;
+  --color-primary-light: #b8d7f5;
+  --color-primary-light-2: #dbebfa;
+  --color-primary-light-3: #f1f6f9;
+  --color-primary-light-4: #175ea1;
+  --color-secondary: #ffa800;
+  --color-txt-body: #202121;
+  --color-txt-body-2: #1c73c4;
+  --color-txt-body-3: #0c3255;
+  --color-background-1: #f4f7f6;
+  --color-background-2: #081f36;
+  --color-background-3: #051423;
+  --color-border: #e9e7ee;
+  --color-success: #09c253;
+  --color-info: #1470eb;
+  --color-warning: #f9b506;
+  --color-error: #da0b0b;
+  --font-body: Roboto;
+  --font-icons: Font Awesome 5 Pro;
+  --color-active: #ffa800;
+  --color-gray-1: #4d4d4d;
+  --color-gray-2: #808080;
+}
+
+.vision__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.vision__content {
+  text-align: center;
+  padding: 10rem 6.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.vision__content__ico {
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 1.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 1.6rem rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision__content__ico i {
+  font-size: 5rem;
+  color: var(--color-txt-body-3);
+}
+
+.vision__content__title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.vision__content__text {
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=about-us.css.map */
