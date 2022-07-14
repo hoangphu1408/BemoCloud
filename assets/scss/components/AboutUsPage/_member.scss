@@ -1,0 +1,64 @@
+.member {
+  padding: 8rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 3.6rem;
+  }
+
+  &__center {
+    @include flex(center, center);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.2rem;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__card {
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__image {
+      flex-shrink: 0;
+      margin-bottom: 1.4rem;
+    }
+
+    &__content {
+      display: flex;
+      &::before {
+        content: '';
+        min-width: 4px;
+        height: auto;
+        margin-right: 0.8rem;
+        background: var(--color-secondary);
+      }
+    }
+
+    &__name {
+      color: var(--color-txt-body-3);
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      margin-bottom: 0.8rem;
+      @include text-truncate(2);
+    }
+
+    &__position {
+      color: var(--color-gray-2);
+      line-height: 2.4rem;
+
+      @include text-truncate(2);
+    }
+  }
+}

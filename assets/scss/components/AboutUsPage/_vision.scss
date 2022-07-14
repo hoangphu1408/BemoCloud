@@ -1,12 +1,49 @@
 .vision {
-  &__main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  padding: 8rem 0;
+
+  &__list {
+    @include tablet {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    display: flex;
+    background: white;
+
+    &__center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & > div {
+      max-width: calc(100% / 2);
+      height: 44.4rem;
+
+      @include tablet {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &:nth-child(2n + 2) {
+      .vision__item__center {
+        order: 2;
+        @include tablet {
+          order: initial;
+        }
+      }
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
   &__content {
     text-align: center;
-    padding: 10rem 6.5rem;
     font-family: 'Open Sans', sans-serif;
+
+    padding: 0 6.5rem;
 
     &__ico {
       margin: auto;
@@ -26,11 +63,26 @@
       font-size: 2.4rem;
       line-height: 3.2rem;
       margin-bottom: 1.6rem;
+
+      @include text-truncate(1);
     }
 
     &__text {
       line-height: 2.4rem;
       font-weight: 400;
+
+      @include text-truncate(8);
+    }
+
+    @include tablet {
+      padding: 3rem;
+    }
+  }
+
+  &__image {
+    img {
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

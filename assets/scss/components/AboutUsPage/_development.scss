@@ -1,0 +1,44 @@
+.development {
+  height: 48rem;
+  background: url('/assets/images/development-image.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+
+  position: relative;
+  @include flex(center, center);
+
+  &__content {
+    max-width: 75rem;
+    position: inherit;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+
+    @include text-truncate(2);
+  }
+
+  &__text {
+    line-height: 2.4rem;
+
+    @include text-truncate(8);
+  }
+
+  &__overplay {
+    position: absolute;
+    z-index: 1;
+    background: var(--color-txt-body-3);
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,40 @@
+.value {
+  padding: 8rem 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.8rem;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.6rem;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    &__ico {
+      //   margin-right: 1.2rem;
+      color: var(--color-active);
+      min-width: 2.4rem;
+      max-height: 2.4rem;
+      margin-right: 0.8rem;
+      @include flex(center, center);
+    }
+
+    &__text {
+      @include text-truncate(8);
+    }
+  }
+
+  &__left {
+    @include flex(center, center);
+  }
+}
