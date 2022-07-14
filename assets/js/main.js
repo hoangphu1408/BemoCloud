@@ -16,6 +16,7 @@
       imJs.toggleMenuMobile();
       imJs.toggleDropdown();
       imJs.activeMenu();
+      imJs.activeCategories();
       imJs.linkToServiceDetail();
       imJs.setLanguage();
       imJs.slickCarousel();
@@ -92,6 +93,8 @@
     activeMenu: function () {
       window.onload = function () {
         let currentHref = location.href;
+        let filter = location.search;
+
         $('.header__menu__link').each(function () {
           let $this = $(this);
 
@@ -99,7 +102,27 @@
             $this.parent().addClass('active');
           }
         });
+
+        if (filter) {
+          let filterToUrl = filter.split('=');
+          let decodeURI = decodeURIComponent(filterToUrl[1]);
+          $('.categories__search').text(decodeURI);
+          $('.categories__item').each(function () {
+            if ($(this).text().trim() == decodeURI) {
+              $(this).addClass('categories__active');
+            } else {
+              $(this).removeClass('categories__active');
+            }
+          });
+        }
       };
+    },
+
+    activeCategories: function () {
+      $('.categories__item').on('click', function (e) {
+        let filter = $(this).text().trim();
+        window.location = 'solution.html?categories=' + filter;
+      });
     },
 
     linkToServiceDetail: function () {

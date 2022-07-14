@@ -1,0 +1,17 @@
+extends ../layouts/layout
+
+
+block params
+    - class_body = "solution-page"
+    - title_page = "Bemo"
+block css
+    link(rel="stylesheet", href="./assets/css/solution.css")
+block main
+    include ../mixins/categories-item.pug
+    -
+        let bgURL = '/assets/images/banner-image-2.png';
+        let serviceTitle = "GIẢI PHÁP";
+        let serviceContent = "Bemo mang đến nhiều giải pháp hiệu quả giải quyết vấn đề doanh nghiệp của bạn";
+    +banner(bgURL, serviceTitle, serviceContent)
+    include ../components/SolutionPage/categories.pug
+    include ../components/SolutionPage/all-solution.pug

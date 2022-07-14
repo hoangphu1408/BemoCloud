@@ -1,0 +1,50 @@
+.categories {
+  padding: 8rem 0;
+  background: var(--color-primary-light-3);
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+  }
+
+  &__item {
+    background-color: white;
+    border-radius: 0.8rem;
+    height: 14.5rem;
+    cursor: pointer;
+    @include flex(center, center);
+
+    &.categories__active {
+      background-color: var(--color-txt-body-3);
+
+      i,
+      h1 {
+        color: white;
+      }
+    }
+
+    flex-direction: column;
+    &__ico {
+      width: 8rem;
+      height: 8rem;
+      @include flex(center, center);
+      i {
+        font-size: 6.6rem;
+        color: var(--color-txt-body-3);
+      }
+    }
+
+    &__title {
+      h1 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--color-txt-body-2);
+      }
+    }
+  }
+}
