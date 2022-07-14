@@ -1,0 +1,16 @@
+extends ../layouts/layout
+
+block params
+    - class_body = "contact-page"
+    - title_page = "Bemo"
+block css
+    link(rel="stylesheet", href="./assets/css/contact.css")
+block main
+    include ../mixins/office-location.pug
+    -
+        let bgURL = '/assets/images/banner-image-2.png';
+        let serviceTitle = "Liên hệ";
+        let serviceContent = "Liên hệ với chúng tôi để được nhân viên tư vấn chi tiết";
+    +banner(bgURL, serviceTitle, serviceContent)
+    include ../components/contact.pug
+    include ../components/ContactPage/office.pug

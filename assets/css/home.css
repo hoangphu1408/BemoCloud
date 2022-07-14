@@ -366,8 +366,13 @@
 }
 
 .solution__item__ico {
-  margin-right: 1.2rem;
   color: var(--color-active);
+  min-width: 2.4rem;
+  max-height: 2.4rem;
+  margin-right: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .solution__item__text {

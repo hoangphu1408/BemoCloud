@@ -1,0 +1,23 @@
+mixin office-location() 
+    .office__item 
+        .office__item__content 
+            .office__item__location
+                .office__item__ico
+                    i.far.fa-map-marker-alt
+                h1 Đà Nẵng 
+            .office__item__info 
+                .office__item__text 
+                    .office__item__text--ico
+                        i.fa-building.far
+                    p Lầu 10, 81 Đường Quang Trung, Quận Hải Châu, Đà Nẵng, Việt Nam
+                .office__item__text 
+                    .office__item__text--ico
+                        i.far.fa-phone
+                    p (+84) 02366-565-115
+                .office__item__text 
+                    .office__item__text--ico
+                        i.fa-clock.far
+                    p 8:00 AM - 5:15 PM Thứ 2 - Thứ 6
+        .office__item__map 
+            iframe(width="359" height="350" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Viettel%20Tower&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0")

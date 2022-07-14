@@ -1,0 +1,132 @@
+:root {
+  --color-primary: #1c73c4;
+  --color-primary-light: #b8d7f5;
+  --color-primary-light-2: #dbebfa;
+  --color-primary-light-3: #f1f6f9;
+  --color-primary-light-4: #175ea1;
+  --color-secondary: #ffa800;
+  --color-txt-body: #202121;
+  --color-txt-body-2: #1c73c4;
+  --color-txt-body-3: #0c3255;
+  --color-background-1: #f4f7f6;
+  --color-background-2: #081f36;
+  --color-background-3: #051423;
+  --color-border: #e9e7ee;
+  --color-success: #09c253;
+  --color-info: #1470eb;
+  --color-warning: #f9b506;
+  --color-error: #da0b0b;
+  --font-body: Roboto;
+  --font-icons: Font Awesome 5 Pro;
+  --color-active: #ffa800;
+  --color-gray-1: #4d4d4d;
+  --color-gray-2: #808080;
+}
+
+.office {
+  padding: 8rem 0;
+}
+
+.office__title {
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+
+.office__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.office__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .office__list {
+    grid-template-columns: repeat(2, 36rem);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .office__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .office__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.office__item__content {
+  margin-bottom: 1.6rem;
+}
+
+.office__item__location {
+  margin-bottom: 1.6rem;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+}
+
+.office__item__location h1 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 800;
+  color: var(--color-txt-body-3);
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.office__item__ico {
+  min-width: 2.4rem;
+  max-height: 2.4rem;
+  margin-right: 0.8rem;
+  color: var(--color-secondary);
+}
+
+.office__item__ico i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.office__item__text {
+  display: flex;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+}
+
+.office__item__text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.office__item__text--ico {
+  min-width: 1.6rem;
+  max-height: 1.6rem;
+  margin-right: 0.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .office__item__map iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
