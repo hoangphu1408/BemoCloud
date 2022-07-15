@@ -21,6 +21,122 @@
   --color-active: #ffa800;
   --color-gray-1: #4d4d4d;
   --color-gray-2: #808080;
+  --color-gray-3: #b3b3b3;
+  --color-gray-4: #e6e6e6;
+}
+
+.blog {
+  padding: 8rem 0;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .blog__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.blog__item {
+  border-radius: 0.8rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog__item__image img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog__item__content {
+  padding: 2.4rem;
+  border: 1px solid var(--color-gray-4);
+  border-top: 0;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.blog__item__ico {
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+  margin-right: 0.4rem;
+  color: var(--color-primary-light-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__item__time {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog__item__time p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.blog__item__title {
+  margin-bottom: 0.8rem;
+}
+
+.blog__item__title h3 {
+  color: var(--color-gray-1);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.blog__item__text {
+  line-height: 2.4rem;
+  color: var(--color-gray-2);
+  margin-bottom: 1.6rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.blog__item__footer button {
+  background: none;
+  color: var(--color-gray-3);
+  border: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__item__footer button p {
+  margin-right: 0.8rem;
+}
+
+.blog *.pagination ul {
+  justify-content: center;
 }
 
 /*# sourceMappingURL=blog.css.map */

@@ -23,6 +23,8 @@
   --color-active: #ffa800;
   --color-gray-1: #4d4d4d;
   --color-gray-2: #808080;
+  --color-gray-3: #b3b3b3;
+  --color-gray-4: #e6e6e6;
 }
 
 [hidden],
@@ -18872,6 +18874,41 @@ header {
   .explore-content p {
     font-size: 1.4rem;
   }
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .pagination ul {
+    justify-content: center;
+  }
+}
+
+.pagination li {
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1.2rem;
+  border: 1px solid var(--color-gray-3);
+  border-radius: 0.8rem;
+  color: var(--color-gray-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li::last-child {
+  margin-right: 0;
+}
+
+.pagination li.active {
+  background: var(--color-txt-body-3);
+  color: white;
+  border: var(--color-txt-body-3);
 }
 
 /*# sourceMappingURL=style.css.map */

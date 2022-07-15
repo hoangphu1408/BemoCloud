@@ -1,0 +1,18 @@
+mixin blog-item(imageSrc, time, title, text)
+    .blog__item 
+        .blog__item__image 
+            img(src=imageSrc)
+        .blog__item__content 
+            .blog__item__top
+                .blog__item__time 
+                    .blog__item__ico
+                        i.fa-calendar.far
+                    p=time 
+                .blog__item__title 
+                    h3.fw-700=title 
+                .blog__item__text 
+                    p=text
+            .blog__item__footer 
+                button
+                    p Xem chi tiết 
+                    i.fa-angle-right.fa

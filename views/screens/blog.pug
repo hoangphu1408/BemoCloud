@@ -1,0 +1,17 @@
+extends ../layouts/layout
+
+
+block params
+    - class_body = "blog-page"
+    - title_page = "Bemo"
+block css
+    link(rel="stylesheet", href="./assets/css/blog.css")
+block main
+    include ../mixins/blog-item.pug
+    -
+        let bgURL = '/assets/images/banner-image-2.png';
+        let serviceTitle = "Chia sẻ kiến thức";
+        let serviceContent = "Bemo mang đến nhiều giải pháp hiệu quả giải quyết vấn đề doanh nghiệp của bạn";
+    +banner(bgURL, serviceTitle, serviceContent)
+    include ../components/BlogPage/blog-list.pug
+    include ../components/explore.pug

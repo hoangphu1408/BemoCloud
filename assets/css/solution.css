@@ -21,6 +21,8 @@
   --color-active: #ffa800;
   --color-gray-1: #4d4d4d;
   --color-gray-2: #808080;
+  --color-gray-3: #b3b3b3;
+  --color-gray-4: #e6e6e6;
 }
 
 .categories {
@@ -36,6 +38,18 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .categories__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .categories__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .categories__item {
@@ -81,6 +95,21 @@
   padding: 8rem 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .all-solution__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .all-solution__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .all-solution__item {
   display: flex;
   cursor: pointer;
@@ -93,9 +122,34 @@
   margin-bottom: 4.8rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .all-solution__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .all-solution__item__image {
   min-width: 45.6rem;
   margin-right: 3.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .all-solution__item__image {
+    min-width: 100%;
+    margin-right: 0;
+    margin-bottom: 3.2rem;
+    flex-shrink: 0;
+  }
+  .all-solution__item__image img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .all-solution__item__content {
+    margin-top: auto;
+  }
 }
 
 .all-solution__item__time {
@@ -123,6 +177,17 @@
   background: var(--color-secondary);
 }
 
+@media only screen and (max-width: 1024px) {
+  .all-solution__item__title h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+  }
+}
+
 .all-solution__item__tag {
   background: var(--color-primary-light-3);
   display: inline-block;
@@ -142,6 +207,17 @@
   margin-bottom: 1.9rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .all-solution__item__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+  }
+}
+
 .all-solution__item__button button {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -155,6 +231,14 @@
 
 .all-solution__item__button button p {
   margin-right: 1.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .all-solution__item {
+    flex-direction: column;
+    min-height: 100%;
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=solution.css.map */
