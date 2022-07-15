@@ -25,8 +25,12 @@
     border-radius: 0.8rem;
     height: 14.5rem;
     cursor: pointer;
+    @include transition(0.5s);
     @include flex(center, center);
 
+    &:hover {
+      background-color: var(--color-gray-4);
+    }
     &.categories__active {
       background-color: var(--color-txt-body-3);
 

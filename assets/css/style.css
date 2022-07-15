@@ -18075,13 +18075,11 @@ header {
 }
 
 .header__logo {
-  align-items: center;
-  justify-content: flex-start;
   padding-right: 6.8rem;
-  cursor: pointer;
 }
 
 .header__logo__main {
+  cursor: pointer;
   width: 17.8rem;
   height: 3rem;
 }
@@ -18092,17 +18090,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 3rem 0;
-  }
-}
-
-.header__hamburger {
-  z-index: 100001;
-  display: none;
-}
-
-@media only screen and (max-width: 1024px) {
-  .header__hamburger {
-    display: block;
+    visibility: hidden;
+    user-select: none;
   }
 }
 
@@ -18230,6 +18219,7 @@ header {
 .header__language .dropdown__language {
   left: auto;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
+  border: 0;
 }
 
 .header__language .dropdown__language .dropdown-item {
@@ -18292,6 +18282,8 @@ header {
   .header__mobile {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 100001;
   }
 }
 

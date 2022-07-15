@@ -14,15 +14,12 @@ header {
   &__menu,
   &__language {
     display: flex;
-    // flex: 1;
   }
 
   &__logo {
-    align-items: center;
-    justify-content: flex-start;
     padding-right: 6.8rem;
-    cursor: pointer;
     &__main {
+      cursor: pointer;
       width: 17.8rem;
       height: 3rem;
     }
@@ -33,16 +30,11 @@ header {
       justify-content: center;
 
       padding: 3rem 0;
+      visibility: hidden;
+      user-select: none;
     }
   }
 
-  &__hamburger {
-    z-index: 100001;
-    display: none;
-    @include large {
-      display: block;
-    }
-  }
   &__menu {
     justify-content: center;
 
@@ -145,7 +137,7 @@ header {
     .dropdown__language {
       left: auto;
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16);
-
+      border: 0;
       .dropdown-item {
         display: flex;
         align-items: center;
@@ -180,7 +172,6 @@ header {
     }
 
     @include large {
-      // display: none;
       margin-top: auto;
       justify-content: center;
       align-items: center;
@@ -196,6 +187,8 @@ header {
     @include large {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      z-index: 100001;
     }
   }
 
