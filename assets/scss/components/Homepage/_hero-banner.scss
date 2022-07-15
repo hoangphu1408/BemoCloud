@@ -60,6 +60,8 @@
       border-radius: 0.8rem;
 
       white-space: nowrap;
+
+      @include transition(0.5s);
       p {
         @include text-overflow;
       }

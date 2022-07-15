@@ -21,6 +21,7 @@ $theme-colors: (
   'gray-2': #808080,
   'gray-3': #b3b3b3,
   'gray-4': #e6e6e6,
+  'gray-5': #d9d9d9,
 );
 
 $theme-fonts: (
@@ -70,4 +71,5 @@ $pc-width: 1680px;
   --color-gray-2: #{map-get($map: $theme-colors, $key: 'gray-2')};
   --color-gray-3: #{map-get($map: $theme-colors, $key: 'gray-3')};
   --color-gray-4: #{map-get($map: $theme-colors, $key: 'gray-4')};
+  --color-gray-5: #{map-get($map: $theme-colors, $key: 'gray-5')};
 }

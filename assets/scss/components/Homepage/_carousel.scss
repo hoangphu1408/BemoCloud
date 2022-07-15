@@ -163,6 +163,8 @@
     min-height: 3.2rem;
 
     white-space: nowrap;
+
+    @include transition(0.5s);
     p {
       @include text-overflow;
     }

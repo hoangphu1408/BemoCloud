@@ -18,6 +18,7 @@
       imJs.activeMenu();
       imJs.activeCategories();
       imJs.linkToServiceDetail();
+      imJs.linkToBlogDetail();
       imJs.setLanguage();
       imJs.slickCarousel();
       imJs.swiperDashboard();
@@ -92,6 +93,7 @@
 
     activeMenu: function () {
       window.onload = function () {
+        // let currentHref = new URL(location);
         let currentHref = location.href;
         let filter = location.search;
 
@@ -130,6 +132,13 @@
         window.location.href = '/services-detail.html';
       });
     },
+
+    linkToBlogDetail: function () {
+      $('.blog__item').on('click', function () {
+        window.location.href = '/blog-detail.html';
+      });
+    },
+
     slickCarousel: function () {
       const carousel = $('.carousel__list');
       carousel.slick({

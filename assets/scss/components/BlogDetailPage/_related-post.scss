@@ -1,0 +1,25 @@
+.related-post {
+  padding: 8rem 0;
+  background: var(--color-primary-light-3);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+    @include large {
+      grid-template-columns: repeat(2, 1fr);
+
+      & .blog__item:nth-child(3n) {
+        display: none;
+      }
+    }
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

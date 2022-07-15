@@ -38,10 +38,7 @@
   border-color: map-get($map: $theme-colors, $key: 'primary');
   &:hover,
   &:active {
-    background-color: darken(
-      $color: map-get($map: $theme-colors, $key: 'primary-light-2'),
-      $amount: 5%
-    );
+    background-color: darken($color: #1470eba6, $amount: 5%);
     border-color: darken(
       $color: map-get($map: $theme-colors, $key: 'primary'),
       $amount: 5%
