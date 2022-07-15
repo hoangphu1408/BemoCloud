@@ -9,7 +9,6 @@
         object-fit: cover;
       }
     }
-
     &__info {
       margin-bottom: 2.4rem;
       @include flex(space-between, center);
@@ -75,6 +74,12 @@
           width: 0.8rem;
           height: 0.8rem;
           background-color: var(--color-gray-5);
+        }
+      }
+
+      &__right {
+        @include large {
+          display: none;
         }
       }
     }

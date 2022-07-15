@@ -28,6 +28,7 @@
 
 .blog-main {
   padding: 8rem 0;
+  overflow: hidden;
 }
 
 .blog-main__image {
@@ -119,6 +120,12 @@
   width: 0.8rem;
   height: 0.8rem;
   background-color: var(--color-gray-5);
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog-main__content__right {
+    display: none;
+  }
 }
 
 .blog-item {
