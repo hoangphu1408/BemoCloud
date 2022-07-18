@@ -14,8 +14,12 @@
     border: 1px solid var(--color-gray-3);
     border-radius: 0.8rem;
     color: var(--color-gray-3);
+    @include transition(0.7s);
     @include flex(center, center);
-
+    &:hover {
+      background-color: #0f487c73;
+      color: white;
+    }
     &::last-child {
       margin-right: 0;
     }

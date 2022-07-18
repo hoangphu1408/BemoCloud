@@ -18887,9 +18887,15 @@ header .container {
   border: 1px solid var(--color-gray-3);
   border-radius: 0.8rem;
   color: var(--color-gray-3);
+  transition: all 0.7s;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pagination li:hover {
+  background-color: #0f487c73;
+  color: white;
 }
 
 .pagination li::last-child {

@@ -29,28 +29,7 @@
 
     &__image {
       margin-right: 5.6rem;
-
-      // &:nth-child(2n + 2) {
-      //   order: 2;
-      //   margin-left: 5.6rem;
-      //   @include large {
-      //     order: unset;
-      //     margin-left: 0;
-      //     margin-bottom: 5.6rem;
-      //   }
-      // }
-
-      // &.right {
-      //   order: 2;
-      //   margin-left: 5.6rem;
-      //   @include large {
-      //     order: unset;
-      //     margin-left: 0;
-      //     margin-bottom: 5.6rem;
-      //   }
-      // }
       @include flex(center, center);
-
       @include large {
         margin-right: 0;
         margin-bottom: 5.6rem;
