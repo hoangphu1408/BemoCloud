@@ -11,23 +11,30 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3.2rem;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 3.2rem;
 
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    // @include tablet {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
 
-    @include mobile {
-      grid-template-columns: repeat(1, 1fr);
-    }
+    // @include mobile {
+    //   grid-template-columns: repeat(1, 1fr);
+    // }
   }
 
   &__card {
     &__item {
       display: flex;
       flex-direction: column;
+      max-width: 26.2rem;
+      @include transition(0.7s);
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
     }
 
     &__image {
@@ -39,8 +46,8 @@
       display: flex;
       &::before {
         content: '';
-        min-width: 4px;
-        height: auto;
+        width: 0.4rem;
+        // height: auto;
         margin-right: 0.8rem;
         background: var(--color-secondary);
       }

@@ -31,8 +31,23 @@
               <li class="header__menu__item"><i class="fa fa-house-damage"></i><a class="header__menu__link" href="/blog.html">Blog</a></li>
               <li class="header__menu__item"><i class="fa fa-house-damage"></i><a class="header__menu__link" href="/contact.html">Contact</a></li>
             </ul>
+            <div class="header__language dropdown header__language__mobile">
+              <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
+              <p class="header__language__text">eng </p><i class="fad fa-angle-down"></i>
+              <div class="dropdown__language dropdown-menu">
+                <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
+                  <p>Vietnam</p>
+                </li>
+                <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
+                  <p>Japan</p>
+                </li>
+                <li class="dropdown-item"> <img src="./assets/images/us-flag 1.png"/>
+                  <p>English</p>
+                </li>
+              </div>
+            </div>
           </div>
-          <div class="header__language dropdown">
+          <div class="header__language dropdown header__language__desktop">
             <div class="header__language__flag"><img src="./assets/images/us-flag 1.png"/></div>
             <p class="header__language__text">eng </p><i class="fad fa-angle-down"></i>
             <div class="dropdown__language dropdown-menu">
@@ -47,8 +62,6 @@
               </li>
             </div>
           </div>
-        </div>
-        <div class="header__mobile">           <img class="header__logo__main" src="./assets/images/Logo.png"/>
           <div class="header__hamburger">
             <button class="hamburger-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
               <svg width="44" height="44" viewBox="0 0 100 100">
@@ -230,49 +243,51 @@
             <h3 class="section__title line-before">Bemo MEMBERS</h3>
             <h1 class="section__title__main">BEMO -  đội ngũ cốt lõi</h1>
           </div>
-          <div class="member__center">
-            <div class="member__list"> 
-              <div class="member__card__item"> 
-                <div class="member__card__image"> 
-                  <image src="./assets/images/chiHang.png"></image>
-                </div>
-                <div class="member__card__content">
-                  <div class="member__card__content__text"> 
-                    <h3 class="member__card__name fw-700">NGUYỄN THỊ THU HẰNG</h3>
-                    <p class="member__card__position fw-700">Phó giám đốc sản phẩm</p>
+          <div class="member__center member-swiper">
+            <div class="swiper-container">
+              <div class="member__list swiper-wrapper">
+                <div class="member__card__item swiper-slide"> 
+                  <div class="member__card__image"> 
+                    <image src="./assets/images/anhQuan.png"></image>
+                  </div>
+                  <div class="member__card__content">
+                    <div class="member__card__content__text"> 
+                      <h3 class="member__card__name fw-700">NGUYỄN TRUNG QUÂN</h3>
+                      <p class="member__card__position fw-700">Giám đốc sản phẩm</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="member__card__item"> 
-                <div class="member__card__image"> 
-                  <image src="./assets/images/chiHang.png"></image>
-                </div>
-                <div class="member__card__content">
-                  <div class="member__card__content__text"> 
-                    <h3 class="member__card__name fw-700">NGUYỄN THỊ THU HẰNG</h3>
-                    <p class="member__card__position fw-700">Phó giám đốc sản phẩm</p>
+                <div class="member__card__item swiper-slide"> 
+                  <div class="member__card__image"> 
+                    <image src="./assets/images/chiHang.png"></image>
+                  </div>
+                  <div class="member__card__content">
+                    <div class="member__card__content__text"> 
+                      <h3 class="member__card__name fw-700">NGUYỄN THỊ THU HẰNG</h3>
+                      <p class="member__card__position fw-700">Phó giám đốc sản phẩm</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="member__card__item"> 
-                <div class="member__card__image"> 
-                  <image src="./assets/images/chiHang.png"></image>
-                </div>
-                <div class="member__card__content">
-                  <div class="member__card__content__text"> 
-                    <h3 class="member__card__name fw-700">NGUYỄN THỊ THU HẰNG</h3>
-                    <p class="member__card__position fw-700">Phó giám đốc sản phẩm</p>
+                <div class="member__card__item swiper-slide"> 
+                  <div class="member__card__image"> 
+                    <image src="./assets/images/chiTam.png"></image>
+                  </div>
+                  <div class="member__card__content">
+                    <div class="member__card__content__text"> 
+                      <h3 class="member__card__name fw-700">NGUYỄN THỊ PHƯƠNG TÂM</h3>
+                      <p class="member__card__position fw-700">Quản lý dự án</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="member__card__item"> 
-                <div class="member__card__image"> 
-                  <image src="./assets/images/chiHang.png"></image>
-                </div>
-                <div class="member__card__content">
-                  <div class="member__card__content__text"> 
-                    <h3 class="member__card__name fw-700">NGUYỄN THỊ THU HẰNG</h3>
-                    <p class="member__card__position fw-700">Phó giám đốc sản phẩm</p>
+                <div class="member__card__item swiper-slide"> 
+                  <div class="member__card__image"> 
+                    <image src="./assets/images/anhPhat.png"></image>
+                  </div>
+                  <div class="member__card__content">
+                    <div class="member__card__content__text"> 
+                      <h3 class="member__card__name fw-700">LÊ NGỌC PHÁT</h3>
+                      <p class="member__card__position fw-700">Trưởng nhóm kỹ thuật</p>
+                    </div>
                   </div>
                 </div>
               </div>

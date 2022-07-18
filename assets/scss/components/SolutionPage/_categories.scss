@@ -27,9 +27,13 @@
     cursor: pointer;
     @include transition(0.5s);
     @include flex(center, center);
-
+    transition: all 0.7s;
     &:hover {
-      background-color: var(--color-gray-4);
+      background-color: #0f487c73;
+      i,
+      h1 {
+        color: white;
+      }
     }
     &.categories__active {
       background-color: var(--color-txt-body-3);

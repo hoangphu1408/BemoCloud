@@ -256,27 +256,16 @@
   align-items: center;
 }
 
-.member__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3.2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .member__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .member__list {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .member__card__item {
   display: flex;
   flex-direction: column;
+  max-width: 26.2rem;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.member__card__item:hover {
+  transform: translateY(-0.5rem);
 }
 
 .member__card__image {
@@ -290,8 +279,7 @@
 
 .member__card__content::before {
   content: '';
-  min-width: 4px;
-  height: auto;
+  width: 0.4rem;
   margin-right: 0.8rem;
   background: var(--color-secondary);
 }
