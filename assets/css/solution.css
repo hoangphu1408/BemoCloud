@@ -62,7 +62,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.7s;
   flex-direction: column;
 }
 
@@ -73,6 +72,7 @@
 .categories__item:hover i,
 .categories__item:hover h1 {
   color: white;
+  transition: all 0.5s;
 }
 
 .categories__item.categories__active {

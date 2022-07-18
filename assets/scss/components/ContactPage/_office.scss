@@ -42,7 +42,7 @@
         font-weight: 800;
         color: var(--color-txt-body-3);
         text-transform: uppercase;
-        @include text-truncate(2);
+        // @include text-truncate(2);
       }
     }
     &__ico {
@@ -61,9 +61,10 @@
       font-size: 1.4rem;
       line-height: 2.2rem;
       font-weight: 400;
-      p {
-        @include text-truncate(2);
-      }
+      margin-bottom: 0.8rem;
+      // p {
+      //   @include text-truncate(2);
+      // }
       &--ico {
         min-width: 1.6rem;
         max-height: 1.6rem;

@@ -27,12 +27,12 @@
     cursor: pointer;
     @include transition(0.5s);
     @include flex(center, center);
-    transition: all 0.7s;
     &:hover {
       background-color: #0f487c73;
       i,
       h1 {
         color: white;
+        @include transition(0.5s);
       }
     }
     &.categories__active {

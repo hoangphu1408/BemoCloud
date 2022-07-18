@@ -153,9 +153,9 @@
   align-items: center;
   gap: 0.8rem;
   color: var(--color-active);
-
-  white-space: nowrap;
-  // @include text-overflow;
+  max-width: 50rem;
+  max-height: 4.8rem;
+  overflow: hidden;
 
   &::after {
     content: '';

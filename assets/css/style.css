@@ -208,7 +208,9 @@
   align-items: center;
   gap: 0.8rem;
   color: var(--color-active);
-  white-space: nowrap;
+  max-width: 50rem;
+  max-height: 4.8rem;
+  overflow: hidden;
 }
 
 .section__title::after {
@@ -18338,6 +18340,10 @@ header .container {
   }
 }
 
+.footer-contact {
+  font-weight: 500;
+}
+
 .footer-contact p {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -18410,7 +18416,7 @@ header .container {
 }
 
 .footer-list-item a {
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.38px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
