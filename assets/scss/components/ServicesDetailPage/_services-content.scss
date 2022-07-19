@@ -1,6 +1,8 @@
 .service__detail__section {
   padding: 8rem 0;
-
+  @include large {
+    padding: 4rem 0;
+  }
   &:nth-child(2n + 2) {
     background-color: var(--color-primary-light-3);
     & * .service__detail__content__image {

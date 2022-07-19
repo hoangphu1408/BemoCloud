@@ -2,6 +2,9 @@
   &-main {
     padding: 8rem 0;
     overflow: hidden;
+    @include large {
+      padding: 4rem 0;
+    }
     &__image {
       margin-bottom: 3.2rem;
       img {

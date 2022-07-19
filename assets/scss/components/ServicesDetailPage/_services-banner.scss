@@ -5,6 +5,9 @@
   background-position: center;
   background-size: cover;
   padding: 8rem 0;
+  // @include large {
+  //   padding: 4rem 0;
+  // }
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

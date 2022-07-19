@@ -3,6 +3,9 @@
   padding: 8rem 0;
   background: white;
   overflow: hidden;
+  @include large {
+    padding: 4rem 0;
+  }
   &__abshape {
     position: absolute;
     top: 0;

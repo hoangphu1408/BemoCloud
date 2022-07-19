@@ -2,6 +2,10 @@
   background: white;
   padding-bottom: 80px;
   padding-top: 80px;
+
+  @include large {
+    padding: 4rem 0;
+  }
   &-text {
     width: 445px;
     margin: 0 auto;

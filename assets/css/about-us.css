@@ -34,6 +34,12 @@
   padding: 8rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .vision {
+    padding: 4rem 0;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .vision__list {
     width: 80%;
@@ -141,6 +147,12 @@
   padding: 8rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .value {
+    padding: 4rem 0;
+  }
+}
+
 .value__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -243,6 +255,12 @@
 
 .member {
   padding: 8rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .member {
+    padding: 4rem 0;
+  }
 }
 
 .member__title {

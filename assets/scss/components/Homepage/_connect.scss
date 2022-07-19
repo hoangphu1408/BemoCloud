@@ -1,6 +1,10 @@
 .connect {
   padding: 8rem 0;
   background: #f1f6f9;
+
+  @include large {
+    padding: 4rem 0;
+  }
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

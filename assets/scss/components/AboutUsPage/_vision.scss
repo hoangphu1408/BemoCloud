@@ -1,6 +1,8 @@
 .vision {
   padding: 8rem 0;
-
+  @include large {
+    padding: 4rem 0;
+  }
   &__list {
     @include tablet {
       width: 80%;

@@ -93,6 +93,12 @@
   padding: 8rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .service__detail__section {
+    padding: 4rem 0;
+  }
+}
+
 .service__detail__section:nth-child(2n + 2) {
   background-color: var(--color-primary-light-3);
 }

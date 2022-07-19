@@ -2,7 +2,9 @@
   position: relative;
   padding: 8rem 0;
   background-color: white;
-
+  @include large {
+    padding: 4rem 0;
+  }
   .container {
     z-index: 3;
   }

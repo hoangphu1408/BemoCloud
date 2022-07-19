@@ -328,6 +328,12 @@
   background-color: white;
 }
 
+@media only screen and (max-width: 1024px) {
+  .solution {
+    padding: 4rem 0;
+  }
+}
+
 .solution .container {
   z-index: 3;
 }
@@ -411,6 +417,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1024px) {
+  .dashboard {
+    padding: 4rem 0;
+  }
+}
+
 .dashboard__abshape {
   position: absolute;
   top: 0;
@@ -483,6 +495,12 @@
 .connect {
   padding: 8rem 0;
   background: #f1f6f9;
+}
+
+@media only screen and (max-width: 1024px) {
+  .connect {
+    padding: 4rem 0;
+  }
 }
 
 .connect__content {

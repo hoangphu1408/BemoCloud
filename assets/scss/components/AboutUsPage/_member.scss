@@ -1,6 +1,8 @@
 .member {
   padding: 8rem 0;
-
+  @include large {
+    padding: 4rem 0;
+  }
   &__title {
     text-align: center;
     margin-bottom: 3.6rem;

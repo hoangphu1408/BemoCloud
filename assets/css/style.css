@@ -18483,6 +18483,12 @@ header .container {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 1024px) {
+  .chooseBemo {
+    padding: 4rem 0;
+  }
+}
+
 .chooseBemo__title {
   margin-bottom: 3.6rem;
   width: 540px;
@@ -18572,6 +18578,12 @@ header .container {
   background: white;
   padding-bottom: 80px;
   padding-top: 80px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    padding: 4rem 0;
+  }
 }
 
 .contact-text {

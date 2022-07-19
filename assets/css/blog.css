@@ -30,6 +30,12 @@
   padding: 8rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .blog {
+    padding: 4rem 0;
+  }
+}
+
 .blog__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
